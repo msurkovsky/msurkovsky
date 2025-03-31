@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import { ArrowDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -29,13 +30,15 @@ const Header = () => {
           <p className="text-lg md:text-xl text-foreground/80 max-w-lg">
             With over 20 years of experience spanning academic research, corporate software engineering, and entrepreneurial ventures.
           </p>
-          <div className="pt-4">
-            <p className="text-xl md:text-2xl italic text-foreground/90">
-              "Fortune favors the prepared mind"
-            </p>
-            <p className="text-base md:text-lg text-primary text-right">
-              — Louis Pasteur
-            </p>
+          <div className="pt-4 flex flex-col">
+            <div className="relative">
+              <p className="text-xl md:text-2xl italic text-foreground/90">
+                "Fortune favors the prepared mind"
+              </p>
+              <p className="absolute text-base md:text-lg text-primary" style={{ right: '0', top: '100%' }}>
+                — Louis Pasteur
+              </p>
+            </div>
           </div>
         </div>
         
