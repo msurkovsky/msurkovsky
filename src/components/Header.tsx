@@ -30,8 +30,11 @@ const Header = () => {
             With over 20 years of experience spanning academic research, corporate software engineering, and entrepreneurial ventures.
           </p>
           <div className="pt-4">
-            <p className="text-xl md:text-2xl italic text-foreground/90 text-right">
-              "Fortune favors the prepared mind" — <span className="text-primary">Louis Pasteur</span>
+            <p className="text-xl md:text-2xl italic text-foreground/90">
+              "Fortune favors the prepared mind"
+            </p>
+            <p className="text-base md:text-lg text-primary text-right">
+              — Louis Pasteur
             </p>
           </div>
         </div>
