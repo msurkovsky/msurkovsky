@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { ArrowDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -32,7 +31,7 @@ const Header = () => {
           </p>
           <div className="pt-4">
             <p className="text-xl md:text-2xl italic text-primary">
-              "Fortune favors the prepared mind"
+              "Fortune favors the prepared mind" - Louis Pasteur
             </p>
           </div>
         </div>
