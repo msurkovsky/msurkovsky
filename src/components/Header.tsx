@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { ArrowDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -32,11 +31,11 @@ const Header = () => {
           </p>
           <div className="pt-4">
             <div className="flex flex-col">
-              <p className="text-xl md:text-2xl italic text-foreground/90 inline-block">
+              <p className="text-xl md:text-2xl italic text-foreground/90">
                 "Fortune favors the prepared mind"
               </p>
-              <div className="text-right">
-                <p className="text-base md:text-lg text-primary inline-block">
+              <div className="flex justify-end mt-2 max-w-md">
+                <p className="text-base md:text-lg text-primary">
                   — Louis Pasteur
                 </p>
               </div>
