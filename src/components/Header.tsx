@@ -51,7 +51,7 @@ const Header = () => {
             {/* Replace with actual portrait */}
             <div className="absolute inset-0 bg-accent/50 rounded-full overflow-hidden">
               <div className="w-full h-full bg-gradient-to-br from-background to-secondary flex items-center justify-center text-foreground/20 text-9xl font-display">
-                JD
+                MŠ
               </div>
             </div>
           </div>

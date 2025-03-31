@@ -25,26 +25,26 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "contact@johndoe.com",
-      link: "mailto:contact@johndoe.com"
+      value: "martint@surkovsky.cz",
+      link: "mailto:martin@surkovsky.cz"
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/johndoe",
-      link: "https://github.com/johndoe"
+      value: "github.com/msurkovsky",
+      link: "https://github.com/msurkovsky"
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/johndoe",
-      link: "https://linkedin.com/in/johndoe"
+      value: "linkedin.com/in/msurkovsky",
+      link: "https://linkedin.com/in/msurkovsky"
     },
     {
       icon: Globe,
       label: "Personal Blog",
-      value: "blog.johndoe.com",
-      link: "https://blog.johndoe.com"
+      value: "blog.surkovsky.cz",
+      link: "https://blog.surkovsky.cz"
     }
   ];
   
@@ -87,7 +87,7 @@ const Contact = () => {
         "mt-24 text-center text-sm text-foreground/60 opacity-0",
         visible && "animate-fade-in animate-delay-800"
       )}>
-        <p>© {new Date().getFullYear()} John Doe. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Martin Šurkovský. All rights reserved.</p>
       </footer>
     </Section>
   );

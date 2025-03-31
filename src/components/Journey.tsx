@@ -22,29 +22,37 @@ const Journey = () => {
   
   const journeyItems = [
     {
-      period: "2003 - 2008",
+      period: "2012 - 2018",
       title: "Academic Research",
-      description: "Conducted groundbreaking research in distributed systems and computational models, publishing papers in top-tier academic journals.",
+      at: "VSB - Technical University of Ostrava, Department of Computer Science",
+      description: "Contributed into several research projects ...",
       icon: Book
     },
     {
-      period: "2008 - 2016",
-      title: "Corporate Software Engineering",
-      description: "Led development teams building scalable enterprise solutions across multiple industries, focusing on high-performance computing applications.",
+      period: "2018 - 2023",
+      title: "Academic Research",
+      at: "VSB - Technical University of Ostrava, IT4Innovations - National Supercomputing Center",
+      description: "Finished PhD, focused on traffic simulations, ....",
+      icon: Book
+    },
+    {
+      period: "2023 - Present",
+      title: "Rockwell Automation",
+      description: "Digital Platform - Shadow service; the layer between edge devices and cloud, ...",
       icon: Briefcase
     },
     {
-      period: "2016 - Present",
-      title: "Industrial Automation",
-      description: "Architecting advanced industrial automation systems incorporating machine learning and real-time data processing.",
-      icon: Briefcase
-    },
-    {
-      period: "2012 - Present",
+      period: "2024",
       title: "Entrepreneurial Ventures",
-      description: "Founded and advised several technology startups, focusing on innovative applications of emerging technologies.",
+      description: "Founded a technology startup, focusing on innovative applications of meal preparation in families with small children.",
       icon: Lightbulb
-    }
+    },
+    {
+      period: "2025",
+      title: "Entrepreneurial Ventures",
+      description: "Founded a technology startup, focusing on ... real-estate transfers. ...",
+      icon: Lightbulb
+    },
   ];
   
   return (

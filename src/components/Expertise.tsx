@@ -23,7 +23,7 @@ const Expertise = () => {
   const expertiseAreas = [
     {
       category: "Languages & Frameworks",
-      skills: ["C++", "Python", "JavaScript/TypeScript", "React", "Node.js", "TensorFlow"]
+      skills: ["Rust", "Python", "JavaScript/TypeScript", "React", "Node.js", "C++"]
     },
     {
       category: "Infrastructure & Systems",
@@ -31,7 +31,7 @@ const Expertise = () => {
     },
     {
       category: "Specializations",
-      skills: ["Real-time Systems", "High Performance Computing", "Machine Learning", "Data Visualization", "Embedded Systems"]
+      skills: ["Real-time Systems", "High Performance Computing", "Machine Learning", "Data Visualization"]
     }
   ];
   

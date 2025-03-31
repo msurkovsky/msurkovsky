@@ -32,7 +32,7 @@ const Navigation = () => {
       )}
     >
       <div className="flex items-center justify-between max-w-screen-2xl mx-auto">
-        <a href="#" className="text-lg font-display tracking-tight">John Doe</a>
+        <a href="#" className="text-lg font-display tracking-tight">Martin Šurkovsky</a>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-10">
