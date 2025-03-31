@@ -2,6 +2,7 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Book, Briefcase, Lightbulb } from 'lucide-react';
+import Section from '@/components/Section';
 
 const Journey = () => {
   const [visible, setVisible] = useState(false);
@@ -20,7 +21,7 @@ const Journey = () => {
     return () => observer.disconnect();
   }, []);
   
-  const journeyItems = [
+  const professionalJourney = [
     {
       period: "2012 - 2018",
       title: "Academic Research",
@@ -41,22 +42,52 @@ const Journey = () => {
       at: "Digital Platform Team",
       description: "Digital Platform - Shadow service; the layer between edge devices and cloud, ...",
       icon: Briefcase
-    },
+    }
+  ];
+  
+  const sideHustles = [
     {
       period: "2024",
-      title: "Entrepreneurial Ventures",
+      title: "Side Hustle",
       at: "Family Tech Startup",
       description: "Founded a technology startup, focusing on innovative applications of meal preparation in families with small children.",
       icon: Lightbulb
     },
     {
       period: "2025",
-      title: "Entrepreneurial Ventures",
+      title: "Side Hustle",
       at: "Real Estate Tech",
       description: "Founded a technology startup, focusing on ... real-estate transfers. ...",
       icon: Lightbulb
-    },
+    }
   ];
+  
+  const renderJourneyItem = (item, index, totalItems) => (
+    <div 
+      key={index} 
+      className={cn(
+        "grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-8 opacity-0",
+        visible && "animate-fade-in",
+        `animate-delay-${index * 200}`
+      )}
+    >
+      <div>
+        <span className="text-sm text-foreground/60 block mb-1">{item.period}</span>
+        <div className="flex items-center gap-2 text-primary">
+          <item.icon size={16} />
+          <span className="font-medium">{item.title}</span>
+        </div>
+        {item.at && (
+          <span className="text-sm text-foreground/70 block mt-1 italic">
+            {item.at}
+          </span>
+        )}
+      </div>
+      <div className="bg-background rounded-md p-6 subtle-shadow">
+        <p className="text-foreground/80">{item.description}</p>
+      </div>
+    </div>
+  );
   
   return (
     <section id="journey" className="section bg-accent/30">
@@ -65,32 +96,14 @@ const Journey = () => {
         <div className="section-divider" />
         
         <div className="space-y-12 mt-12">
-          {journeyItems.map((item, index) => (
-            <div 
-              key={index} 
-              className={cn(
-                "grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-8 opacity-0",
-                visible && "animate-fade-in",
-                `animate-delay-${index * 200}`
-              )}
-            >
-              <div>
-                <span className="text-sm text-foreground/60 block mb-1">{item.period}</span>
-                <div className="flex items-center gap-2 text-primary">
-                  <item.icon size={16} />
-                  <span className="font-medium">{item.title}</span>
-                </div>
-                {item.at && (
-                  <span className="text-sm text-foreground/70 block mt-1 italic">
-                    {item.at}
-                  </span>
-                )}
-              </div>
-              <div className="bg-background rounded-md p-6 subtle-shadow">
-                <p className="text-foreground/80">{item.description}</p>
-              </div>
-            </div>
-          ))}
+          {professionalJourney.map((item, index) => renderJourneyItem(item, index, professionalJourney.length))}
+        </div>
+        
+        <h3 className="text-2xl md:text-3xl mt-16 mb-6 font-light">Side Hustles</h3>
+        <div className="section-divider" />
+        
+        <div className="space-y-12 mt-12">
+          {sideHustles.map((item, index) => renderJourneyItem(item, index + professionalJourney.length, sideHustles.length))}
         </div>
       </div>
     </section>
