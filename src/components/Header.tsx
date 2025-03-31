@@ -30,14 +30,16 @@ const Header = () => {
           <p className="text-lg md:text-xl text-foreground/80 max-w-lg">
             With over 20 years of experience spanning academic research, corporate software engineering, and entrepreneurial ventures.
           </p>
-          <div className="pt-4 flex flex-col">
-            <div className="relative">
-              <p className="text-xl md:text-2xl italic text-foreground/90">
+          <div className="pt-4">
+            <div className="flex flex-col">
+              <p className="text-xl md:text-2xl italic text-foreground/90 inline-block">
                 "Fortune favors the prepared mind"
               </p>
-              <p className="absolute text-base md:text-lg text-primary" style={{ right: '0', top: '100%' }}>
-                — Louis Pasteur
-              </p>
+              <div className="text-right">
+                <p className="text-base md:text-lg text-primary inline-block">
+                  — Louis Pasteur
+                </p>
+              </div>
             </div>
           </div>
         </div>
