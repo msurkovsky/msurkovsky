@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import Section from './Section';
 import { cn } from '@/lib/utils';
@@ -32,6 +31,10 @@ const Expertise = () => {
     {
       category: "Specializations",
       skills: ["Real-time Systems", "High Performance Computing", "Machine Learning", "Data Visualization"]
+    },
+    {
+      category: "Entrepreneurial Experience",
+      skills: ["Startup Development", "Product Management", "Business Strategy", "Team Leadership", "Fundraising", "Market Analysis"]
     }
   ];
   
