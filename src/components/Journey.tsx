@@ -38,18 +38,21 @@ const Journey = () => {
     {
       period: "2023 - Present",
       title: "Rockwell Automation",
+      at: "Digital Platform Team",
       description: "Digital Platform - Shadow service; the layer between edge devices and cloud, ...",
       icon: Briefcase
     },
     {
       period: "2024",
       title: "Entrepreneurial Ventures",
+      at: "Family Tech Startup",
       description: "Founded a technology startup, focusing on innovative applications of meal preparation in families with small children.",
       icon: Lightbulb
     },
     {
       period: "2025",
       title: "Entrepreneurial Ventures",
+      at: "Real Estate Tech",
       description: "Founded a technology startup, focusing on ... real-estate transfers. ...",
       icon: Lightbulb
     },
@@ -77,6 +80,11 @@ const Journey = () => {
                   <item.icon size={16} />
                   <span className="font-medium">{item.title}</span>
                 </div>
+                {item.at && (
+                  <span className="text-sm text-foreground/70 block mt-1 italic">
+                    {item.at}
+                  </span>
+                )}
               </div>
               <div className="bg-background rounded-md p-6 subtle-shadow">
                 <p className="text-foreground/80">{item.description}</p>

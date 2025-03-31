@@ -1,6 +1,9 @@
+
 import { useEffect, useState } from 'react';
 import { ArrowDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const Header = () => {
   const [visible, setVisible] = useState(false);
@@ -15,6 +18,9 @@ const Header = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
+  
+  // Image path will be set here when you add your actual image
+  const profileImagePath = "/path/to/your/image.jpg";
   
   return (
     <header className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-24">
@@ -48,12 +54,12 @@ const Header = () => {
           visible && "animate-fade-in animate-delay-400"
         )}>
           <div className="relative aspect-square max-w-sm mx-auto md:ml-auto md:mr-0">
-            {/* Replace with actual portrait */}
-            <div className="absolute inset-0 bg-accent/50 rounded-full overflow-hidden">
-              <div className="w-full h-full bg-gradient-to-br from-background to-secondary flex items-center justify-center text-foreground/20 text-9xl font-display">
+            <Avatar className="w-full h-full">
+              <AvatarImage src={profileImagePath} alt="Profile picture" />
+              <AvatarFallback className="w-full h-full bg-gradient-to-br from-background to-secondary flex items-center justify-center text-foreground/20 text-9xl font-display">
                 MŠ
-              </div>
-            </div>
+              </AvatarFallback>
+            </Avatar>
           </div>
         </div>
       </div>
