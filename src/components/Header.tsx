@@ -20,7 +20,7 @@ const Header = () => {
   };
   
   // Image path will be set here when you add your actual image
-  const profileImagePath = "/path/to/your/image.jpg";
+  const profileImagePath = "/images/msurkovsky.png";
   
   return (
     <header className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-24">
