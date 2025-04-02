@@ -121,6 +121,22 @@
     animation-delay: 800ms;
   }
   
+  .transition-delay-75ms {
+    transition-delay: 75ms;
+  }
+  
+  .transition-delay-150ms {
+    transition-delay: 150ms;
+  }
+  
+  .transition-delay-225ms {
+    transition-delay: 225ms;
+  }
+  
+  .transition-delay-300ms {
+    transition-delay: 300ms;
+  }
+  
   .subtle-shadow {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
   }
