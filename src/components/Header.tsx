@@ -23,7 +23,7 @@ const Header = () => {
   const profileImagePath = `${import.meta.env.BASE_URL}/images/msurkovsky.png`;
   
   return (
-    <header className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-24">
+    <header className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-24 pt-20 md:pt-0">
       <div className="max-w-screen-xl w-full mx-auto grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
         <div className={cn(
           "md:col-span-3 space-y-6 opacity-0",

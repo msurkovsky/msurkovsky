@@ -59,7 +59,7 @@ const Navigation = () => {
       
       {/* Mobile Navigation Menu */}
       <div className={cn(
-        "md:hidden fixed inset-0 bg-background z-40 transition-transform duration-300 ease-in-out pt-20",
+        "md:hidden fixed inset-0 bg-background/95 backdrop-blur-md z-40 transition-transform duration-300 ease-in-out pt-20",
         isOpen ? "translate-x-0" : "translate-x-full"
       )}>
         <div className="flex flex-col items-center gap-8 p-6">
