@@ -16,6 +16,18 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   
+  // Effect to prevent body scrolling when menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+  
   const scrollTo = (id: string) => {
     setIsOpen(false);
     const element = document.getElementById(id);
@@ -50,7 +62,7 @@ const Navigation = () => {
         {/* Mobile Menu Button */}
         <button 
           onClick={() => setIsOpen(!isOpen)} 
-          className="md:hidden"
+          className="md:hidden z-50"
           aria-label="Toggle menu"
         >
           {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -59,7 +71,7 @@ const Navigation = () => {
       
       {/* Mobile Navigation Menu */}
       <div className={cn(
-        "md:hidden fixed inset-0 bg-background/95 backdrop-blur-md z-40 transition-transform duration-300 ease-in-out pt-20",
+        "md:hidden fixed inset-0 bg-background z-40 transition-transform duration-300 ease-in-out pt-20",
         isOpen ? "translate-x-0" : "translate-x-full"
       )}>
         <div className="flex flex-col items-center gap-8 p-6">
