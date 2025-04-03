@@ -24,38 +24,38 @@ const Journey = () => {
   const professionalJourney = [
     {
       period: "2012 - 2018",
-      title: "Academic Research",
+      title: "Researcher",
       at: "VSB - Technical University of Ostrava, Department of Computer Science",
       description: "Contributed into several research projects ...",
       icon: Book
     },
     {
       period: "2018 - 2023",
-      title: "Academic Research",
+      title: "Researcher",
       at: "VSB - Technical University of Ostrava, IT4Innovations - National Supercomputing Center",
       description: "Finished PhD, focused on traffic simulations, ....",
       icon: Book
     },
     {
       period: "2023 - Present",
-      title: "Rockwell Automation",
-      at: "Digital Platform Team",
+      title: "Senior Software Engineer",
+      at: "Rockwell Automation",
       description: "Digital Platform - Shadow service; the layer between edge devices and cloud, ...",
       icon: Briefcase
     }
   ];
   
-  const sideHustles = [
+  const entrepreneurialVentures = [
     {
-      period: "2024",
-      title: "Side Hustle",
-      at: "Family Tech Startup",
+      period: "2023 - 2024",
+      title: "Co-Founder",
+      at: "Nomlify",
       description: "Founded a technology startup, focusing on innovative applications of meal preparation in families with small children.",
       icon: Lightbulb
     },
     {
-      period: "2025",
-      title: "Side Hustle",
+      period: "2025 - Present",
+      title: "Co-Founder",
       at: "Real Estate Tech",
       description: "Founded a technology startup, focusing on ... real-estate transfers. ...",
       icon: Lightbulb
@@ -99,11 +99,11 @@ const Journey = () => {
           {professionalJourney.map((item, index) => renderJourneyItem(item, index, professionalJourney.length))}
         </div>
         
-        <h3 className="text-2xl md:text-3xl mt-16 mb-6 font-light">Side Hustles</h3>
+        <h3 className="text-2xl md:text-3xl mt-16 mb-6 font-light">Entrepreneurial Ventures</h3>
         <div className="section-divider" />
         
         <div className="space-y-12 mt-12">
-          {sideHustles.map((item, index) => renderJourneyItem(item, index + professionalJourney.length, sideHustles.length))}
+          {entrepreneurialVentures.map((item, index) => renderJourneyItem(item, index + professionalJourney.length, entrepreneurialVentures.length))}
         </div>
       </div>
     </section>
