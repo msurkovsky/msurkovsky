@@ -23,11 +23,11 @@ const Journey = () => {
   
   const professionalJourney = [
     {
-      period: "2012 - 2018",
-      title: "Researcher",
-      at: "VSB - Technical University of Ostrava, Department of Computer Science",
-      description: "Contributed into several research projects ...",
-      icon: Book
+      period: "2023 - Present",
+      title: "Senior Software Engineer",
+      at: "Rockwell Automation",
+      description: "Initially contributed to the CIP Stack development using Rust. Following a team reorganization, I now work as part of a team building the Shadow Service - a suite of microservices that mirror selected industrial edge device functionality to the cloud. This architecture enables data flow from controllers and other industrial hardware to cloud environments at configurable service levels, providing a unified access point for client applications. This approach alleviates bandwidth constraints on industrial networks.",
+      icon: Briefcase
     },
     {
       period: "2018 - 2023",
@@ -37,11 +37,11 @@ const Journey = () => {
       icon: Book
     },
     {
-      period: "2023 - Present",
-      title: "Senior Software Engineer",
-      at: "Rockwell Automation",
-      description: "Digital Platform - Shadow service; the layer between edge devices and cloud, ...",
-      icon: Briefcase
+      period: "2012 - 2018",
+      title: "Researcher",
+      at: "VSB - Technical University of Ostrava, Department of Computer Science",
+      description: "Contributed into several research projects ...",
+      icon: Book
     }
   ];
   
