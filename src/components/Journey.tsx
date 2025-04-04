@@ -26,21 +26,39 @@ const Journey = () => {
       period: "2023 - Present",
       title: "Senior Software Engineer",
       at: "Rockwell Automation",
-      description: "Initially contributed to the CIP Stack development using Rust. Following a team reorganization, I now work as part of a team building the Shadow Service - a suite of microservices that mirror selected industrial edge device functionality to the cloud. This architecture enables data flow from controllers and other industrial hardware to cloud environments at configurable service levels, providing a unified access point for client applications. This approach alleviates bandwidth constraints on industrial networks.",
+      description: "Initially contributed to the CIP Stack development using Rust. Following a team reorganization, I now work as part of a team building the Shadow Service - a suite of microservices that mirror selected industrial edge device functionality to the cloud.",
+      achievements: [
+        "Developed CIP Stack using Rust",
+        "Built Shadow Service - microservices mirroring industrial edge device functionality to the cloud",
+        "Created architecture enabling data flow from controllers and hardware to cloud environments at configurable service levels",
+        "Provided unified access point for client applications, alleviating bandwidth constraints on industrial networks"
+      ],
       icon: Briefcase
     },
     {
       period: "2018 - 2023",
       title: "Researcher",
       at: "VSB - Technical University of Ostrava, IT4Innovations - National Supercomputing Center",
-      description: "Contributed to multiple national and international research projects, specializing in translating complex scientific requirements into scalable software solutions across diverse domains. Key contributions include: Enhanced a traffic simulator's scalability for high-performance computing environments; Modernized the viaRodos project, successfully migrating it from legacy systems to current technologies after the original maintainer's departure; Led development of a deterministic traffic simulator, initially as the primary developer and later as technical lead for an expanded team; Initiated modernization work on Caver, a protein analysis tool, quickly acquiring domain knowledge in computational biology to contribute to early design phases.",
+      description: "Contributed to multiple national and international research projects, specializing in translating complex scientific requirements into scalable software solutions across diverse domains.",
+      achievements: [
+        "Enhanced a traffic simulator's scalability for high-performance computing environments",
+        "Modernized the viaRodos project, successfully migrating it from legacy systems to current technologies after the original maintainer's departure",
+        "Led development of a deterministic traffic simulator, initially as the primary developer and later as technical lead for an expanded team",
+        "Initiated modernization work on Caver, a protein analysis tool, quickly acquiring domain knowledge in computational biology to contribute to early design phases"
+      ],
       icon: Book
     },
     {
       period: "2012 - 2018",
       title: "Researcher",
       at: "VSB - Technical University of Ostrava, Department of Computer Science",
-      description: "Conducted research while pursuing my PhD, contributing to multiple software projects across various computing domains. My progression included: Contributed to the development of a visual programming tool designed to simplify access to high-performance computing resources; Assisted in creating software tools to support researchers conducting experiments in combinatorial optimization domains; Participated in a complete rewrite of a hierarchical table visualization system using JavaScript canvas technology; Advanced to a lead position in my final years, overseeing development work and guiding junior researchers",
+      description: "Conducted research while pursuing my PhD, contributing to multiple software projects across various computing domains.",
+      achievements: [
+        "Contributed to the development of a visual programming tool designed to simplify access to high-performance computing resources",
+        "Assisted in creating software tools to support researchers conducting experiments in combinatorial optimization domains",
+        "Participated in a complete rewrite of a hierarchical table visualization system using JavaScript canvas technology",
+        "Advanced to a lead position in my final years, overseeing development work and guiding junior researchers"
+      ],
       icon: Book
     }
   ];
@@ -51,13 +69,15 @@ const Journey = () => {
       title: "Co-Founder",
       at: "Nomlify",
       description: "Founded a technology startup, focusing on innovative applications of meal preparation in families with small children.",
+      achievements: [],
       icon: Lightbulb
     },
     {
       period: "2025 - Present",
       title: "Co-Founder",
       at: "Real Estate Tech",
-      description: "Founded a technology startup, focusing on ... real-estate transfers. ...",
+      description: "Founded a technology startup, focusing on real-estate transfers.",
+      achievements: [],
       icon: Lightbulb
     }
   ];
@@ -84,7 +104,18 @@ const Journey = () => {
         )}
       </div>
       <div className="bg-background rounded-md p-6 subtle-shadow">
-        <p className="text-foreground/80">{item.description}</p>
+        <p className="text-foreground/80 mb-4">{item.description}</p>
+        
+        {item.achievements && item.achievements.length > 0 && (
+          <div className="mt-2">
+            <h4 className="text-sm font-medium text-foreground/70 mb-2">Key Achievements:</h4>
+            <ul className="list-disc pl-5 space-y-1">
+              {item.achievements.map((achievement, i) => (
+                <li key={i} className="text-foreground/80 text-sm">{achievement}</li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );
