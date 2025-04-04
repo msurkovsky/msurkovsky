@@ -26,13 +26,8 @@ const Journey = () => {
       period: "2023 - Present",
       title: "Senior Software Engineer",
       at: "Rockwell Automation",
-      description: "Initially contributed to the CIP Stack development using Rust. Following a team reorganization, I now work as part of a team building the Shadow Service - a suite of microservices that mirror selected industrial edge device functionality to the cloud.",
-      achievements: [
-        "Developed CIP Stack using Rust",
-        "Built Shadow Service - microservices mirroring industrial edge device functionality to the cloud",
-        "Created architecture enabling data flow from controllers and hardware to cloud environments at configurable service levels",
-        "Provided unified access point for client applications, alleviating bandwidth constraints on industrial networks"
-      ],
+      description: "Initially contributed to the CIP Stack development using Rust. Following a team reorganization, I now work as part of a team building the Shadow Service - a suite of microservices that mirror selected industrial edge device functionality to the cloud. This architecture enables data flow from controllers and other industrial hardware to cloud environments at configurable service levels, providing a unified access point for client applications. This approach alleviates bandwidth constraints on industrial networks.",
+      achievements: [],
       icon: Briefcase
     },
     {
@@ -55,9 +50,8 @@ const Journey = () => {
       description: "Conducted research while pursuing my PhD, contributing to multiple software projects across various computing domains.",
       achievements: [
         "Contributed to the development of a visual programming tool designed to simplify access to high-performance computing resources",
-        "Assisted in creating software tools to support researchers conducting experiments in combinatorial optimization domains",
-        "Participated in a complete rewrite of a hierarchical table visualization system using JavaScript canvas technology",
-        "Advanced to a lead position in my final years, overseeing development work and guiding junior researchers"
+        "Assisted in creating a framework for generating discrete structures from basic building blocks such as Cartesian products and mappings, with capabilities to enumerate all elements, all non-isomorphic structures, or generate random elements",
+        "Participated in a complete rewrite of a hierarchical table visualization system using JavaScript canvas technology. Advanced to a lead position in my final years, overseeing development work and guiding junior co-workers"
       ],
       icon: Book
     }
