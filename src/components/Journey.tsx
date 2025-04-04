@@ -33,14 +33,14 @@ const Journey = () => {
       period: "2018 - 2023",
       title: "Researcher",
       at: "VSB - Technical University of Ostrava, IT4Innovations - National Supercomputing Center",
-      description: "Finished PhD, focused on traffic simulations, ....",
+      description: "Contributed to multiple national and international research projects, specializing in translating complex scientific requirements into scalable software solutions across diverse domains. Key contributions include: Enhanced a traffic simulator's scalability for high-performance computing environments; Modernized the viaRodos project, successfully migrating it from legacy systems to current technologies after the original maintainer's departure; Led development of a deterministic traffic simulator, initially as the primary developer and later as technical lead for an expanded team; Initiated modernization work on Caver, a protein analysis tool, quickly acquiring domain knowledge in computational biology to contribute to early design phases.",
       icon: Book
     },
     {
       period: "2012 - 2018",
       title: "Researcher",
       at: "VSB - Technical University of Ostrava, Department of Computer Science",
-      description: "Contributed into several research projects ...",
+      description: "Conducted research while pursuing my PhD, contributing to multiple software projects across various computing domains. My progression included: Contributed to the development of a visual programming tool designed to simplify access to high-performance computing resources; Assisted in creating software tools to support researchers conducting experiments in combinatorial optimization domains; Participated in a complete rewrite of a hierarchical table visualization system using JavaScript canvas technology; Advanced to a lead position in my final years, overseeing development work and guiding junior researchers",
       icon: Book
     }
   ];
