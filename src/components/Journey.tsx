@@ -77,7 +77,8 @@ const Journey = () => {
       title: "Co-Founder",
       at: "Real Estate Tech",
       description: "Founded a technology startup, focusing on real-estate transfers.",
-      achievements: [],
+      experiences: [],
+      conclusion: "",
       icon: Lightbulb
     }
   ];
@@ -114,6 +115,23 @@ const Journey = () => {
                 <li key={i} className="text-foreground/80 text-sm">{achievement}</li>
               ))}
             </ul>
+          </div>
+        )}
+        
+        {item.experiences && item.experiences.length > 0 && (
+          <div className="mt-2">
+            <h4 className="text-sm font-medium text-foreground/70 mb-2">Key Experiences:</h4>
+            <ul className="list-disc pl-5 space-y-1">
+              {item.experiences.map((experience, i) => (
+                <li key={i} className="text-foreground/80 text-sm">{experience}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+        
+        {item.conclusion && (
+          <div className="mt-4 pt-3 border-t border-border/50">
+            <p className="text-foreground/80 text-sm italic">{item.conclusion}</p>
           </div>
         )}
       </div>
