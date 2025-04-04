@@ -62,8 +62,14 @@ const Journey = () => {
       period: "2023 - 2024",
       title: "Co-Founder",
       at: "Nomlify",
-      description: "Founded a technology startup, focusing on innovative applications of meal preparation in families with small children.",
-      achievements: [],
+      description: "Developed concept for a specialized digital cookbook platform targeting parents of toddlers. Nomlify aimed to help parents identify and modify recipes with age-appropriate ingredients for young children.",
+      experiences: [
+        "Participated in a startup accelerator program, refining our business concept through multiple pivots based on market feedback",
+        "Worked through the early stages of ideation and validation, learning crucial product-market fit principles",
+        "Gained hands-on experience with lean startup methodology and customer development processes",
+        "Created initial website (nomlify.com) in Czech to test concept viability with potential users",
+      ],
+      conclusion: "Though we didn't reach the app development phase, this entrepreneurial journey was truly mind-shifting. The accelerator experience transformed my perspective on product development, revealing the complex interplay between technical innovation and market needs. These insights continue to influence my approach to software development and problem-solving in ways that traditional employment couldn't provide.RetryClaude can make mistakes. Please double-check responses.",
       icon: Lightbulb
     },
     {
