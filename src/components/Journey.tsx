@@ -59,6 +59,20 @@ const Journey = () => {
   
   const entrepreneurialVentures = [
     {
+      period: "2025 - Present",
+      title: "Founder",
+      at: "Real Estate Tech",
+      description: "Developing a digital platform to streamline real estate transactions, beginning with legal document preparation and process management. Currently in early implementation stage with initial users.",
+      experiences: [
+        "Creating efficiency tools to significantly improve legal workflow in property transactions",
+        "Building toward a comprehensive platform connecting all stakeholders in the real estate process",
+        "Designing for transparency, allowing all parties to track transaction status in real time",
+        "Applying software expertise to create a frictionless experience for real estate transactions"
+      ],
+      conclusion: "This early-stage venture combines technical expertise with real industry insights, focusing on solving key friction points in the traditional property transaction process. This version is more general and doesn't reveal your specific target market strategy, giving you flexibility while still communicating the core value of your venture.",
+      icon: Lightbulb
+    },
+    {
       period: "2023 - 2024",
       title: "Co-Founder",
       at: "Nomlify",
@@ -70,15 +84,6 @@ const Journey = () => {
         "Created initial website (nomlify.com) in Czech to test concept viability with potential users",
       ],
       conclusion: "Though we didn't reach the app development phase, this entrepreneurial journey was truly mind-shifting. The accelerator experience transformed my perspective on product development, revealing the complex interplay between technical innovation and market needs. These insights continue to influence my approach to software development and problem-solving in ways that traditional employment couldn't provide.RetryClaude can make mistakes. Please double-check responses.",
-      icon: Lightbulb
-    },
-    {
-      period: "2025 - Present",
-      title: "Co-Founder",
-      at: "Real Estate Tech",
-      description: "Founded a technology startup, focusing on real-estate transfers.",
-      experiences: [],
-      conclusion: "",
       icon: Lightbulb
     }
   ];
