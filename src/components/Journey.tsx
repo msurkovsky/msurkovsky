@@ -78,35 +78,34 @@ const Journey = () => {
       period: "2025 - Present",
       title: "Founder",
       at: "Doqra",
-      description: "Developing a digital platform to streamline real estate transactions, beginning with legal document preparation and process management. Currently in early implementation stage with initial users.",
-      bulletTitle: "Vision & Progress:",
+      description: "Developing a digital platform to solve key friction points in traditional property transactions by streamlining document flow and enhancing process visibility. This venture combines technical expertise with real estate industry insights, currently in early implementation with initial users.",
+      bulletTitle: "Current Focus & Vision:",
       bulletPoints: [
         "Creating efficiency tools to significantly improve legal workflow in property transactions",
         "Building toward a comprehensive platform connecting all stakeholders in the real estate process",
         "Designing for transparency, allowing all parties to track transaction status in real time",
         "Applying software expertise to create a frictionless experience for real estate transactions"
       ],
-      conclusion: "This early-stage venture combines technical expertise with real industry insights, focusing on solving key friction points in the traditional property transaction process. This version is more general and doesn't reveal your specific target market strategy, giving you flexibility while still communicating the core value of your venture.",
       icon: Lightbulb
     },
     {
       period: "2023 - 2024",
       title: "Co-Founder",
       at: "Nomlify",
-      description: [
-        {
-          text: "Developed concept for a specialized digital cookbook platform targeting parents of toddlers. Nomlify aimed to help parents identify and modify recipes with age-appropriate ingredients for young children.",
-          style: "text-foreground/80"
-        }
-      ],
+      description: "Developed concept for a specialized digital cookbook platform targeting parents of toddlers. Nomlify aimed to help parents identify and modify recipes with age-appropriate ingredients for young children.",
       bulletPoints: [
         "Participated in a startup accelerator program, refining our business concept through multiple pivots based on market feedback",
         "Worked through the early stages of ideation and validation, learning crucial product-market fit principles",
         "Gained hands-on experience with lean startup methodology and customer development processes",
-        "Created initial website (nomlify.com) in Czech to test concept viability with potential users"
+        "Created landing page (nomlify.com) in Czech to test concept viability with potential users"
       ],
       bulletTitle: "Key Experiences:",
-      conclusion: "Though we didn't reach the app development phase, this entrepreneurial journey was truly mind-shifting. The accelerator experience transformed my perspective on product development, revealing the complex interplay between technical innovation and market needs. These insights continue to influence my approach to software development and problem-solving in ways that traditional employment couldn't provide.",
+      conclusion: [
+        {
+          text: "Though we didn't reach the app development phase, this entrepreneurial journey was truly mind-shifting. The accelerator experience transformed my perspective on product development, revealing the complex interplay between technical innovation and market needs. These insights continue to influence my approach to software development and problem-solving in ways that traditional employment couldn't provide.",
+          style: "text-foreground/70 italic text-sm"
+        }
+      ],
       icon: Lightbulb
     }
   ];
@@ -121,7 +120,7 @@ const Journey = () => {
             key={pIndex} 
             className={cn(
               "mb-4", 
-              paragraph.style || "text-foreground/70 italic text-sm"
+              paragraph.style
             )}
           >
             {paragraph.text}
