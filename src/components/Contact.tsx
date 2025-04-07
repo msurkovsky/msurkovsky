@@ -51,14 +51,14 @@ const Contact = () => {
   return (
     <Section id="contact" title="Contact" className="bg-accent/30 pb-32">
       <div className={cn(
-        "max-w-lg mx-auto opacity-0",
+        "max-w-2xl mx-auto opacity-0",
         visible && "animate-fade-in"
       )}>
         <p className="text-center text-foreground/80 mb-12">
           Interested in discussing a project or just want to connect? Feel free to reach out through any of these channels.
         </p>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {contactItems.map((item, index) => (
             <a 
               key={index}
@@ -66,7 +66,7 @@ const Contact = () => {
               target="_blank"
               rel="noopener noreferrer"
               className={cn(
-                "flex items-center gap-4 p-4 bg-background rounded-lg subtle-shadow transition-all hover:shadow-md hover:-translate-y-1 opacity-0",
+                "flex items-center gap-4 p-6 bg-background rounded-lg subtle-shadow transition-all hover:shadow-md hover:-translate-y-1 opacity-0",
                 visible && "animate-fade-in",
                 `animate-delay-${index * 200}`
               )}
@@ -75,7 +75,7 @@ const Contact = () => {
               <div className="shrink-0 p-2 bg-accent/50 rounded-full">
                 <item.icon size={20} className="text-primary" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="text-sm text-foreground/60">{item.label}</p>
                 <p className="text-foreground">{item.value}</p>
               </div>
