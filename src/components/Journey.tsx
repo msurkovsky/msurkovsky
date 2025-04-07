@@ -26,8 +26,14 @@ const Journey = () => {
       period: "2023 - Present",
       title: "Senior Software Engineer",
       at: "Rockwell Automation",
-      description: "Initially contributed to the CIP Stack development using Rust. Following a team reorganization, I now work as part of a team building the Shadow Service - a suite of microservices that mirror selected industrial edge device functionality to the cloud. This architecture enables data flow from controllers and other industrial hardware to cloud environments at configurable service levels, providing a unified access point for client applications. This approach alleviates bandwidth constraints on industrial networks.",
-      achievements: [],
+      description: "Initially contributed to the CIP Stack development using Rust. Following a team reorganization, I now work as part of a team building the Shadow Service - a suite of microservices that mirror selected industrial edge device functionality to the cloud.",
+      bulletPoints: [
+        "Developing microservices that mirror industrial edge device functionality to the cloud",
+        "Enabling data flow from controllers and other industrial hardware to cloud environments at configurable service levels",
+        "Providing a unified access point for client applications",
+        "Alleviating bandwidth constraints on industrial networks through optimized architecture"
+      ],
+      bulletTitle: "Key Responsibilities:",
       icon: Briefcase
     },
     {
@@ -35,12 +41,13 @@ const Journey = () => {
       title: "Researcher",
       at: "VSB - Technical University of Ostrava, IT4Innovations - National Supercomputing Center",
       description: "Contributed to multiple national and international research projects, specializing in translating complex scientific requirements into scalable software solutions across diverse domains.",
-      achievements: [
+      bulletPoints: [
         "Enhanced a traffic simulator's scalability for high-performance computing environments",
         "Modernized the viaRodos project, successfully migrating it from legacy systems to current technologies after the original maintainer's departure",
         "Led development of a deterministic traffic simulator, initially as the primary developer and later as technical lead for an expanded team",
         "Initiated modernization work on Caver, a protein analysis tool, quickly acquiring domain knowledge in computational biology to contribute to early design phases"
       ],
+      bulletTitle: "Key Achievements:",
       icon: Book
     },
     {
@@ -48,11 +55,12 @@ const Journey = () => {
       title: "Researcher",
       at: "VSB - Technical University of Ostrava, Department of Computer Science",
       description: "Conducted research while pursuing my PhD, contributing to multiple software projects across various computing domains.",
-      achievements: [
+      bulletPoints: [
         "Contributed to the development of a visual programming tool designed to simplify access to high-performance computing resources",
         "Assisted in creating a framework for generating discrete structures from basic building blocks such as Cartesian products and mappings, with capabilities to enumerate all elements, all non-isomorphic structures, or generate random elements",
         "Participated in a complete rewrite of a hierarchical table visualization system using JavaScript canvas technology. Advanced to a lead position in my final years, overseeing development work and guiding junior co-workers"
       ],
+      bulletTitle: "Key Achievements:",
       icon: Book
     }
   ];
@@ -63,12 +71,13 @@ const Journey = () => {
       title: "Founder",
       at: "Real Estate Tech",
       description: "Developing a digital platform to streamline real estate transactions, beginning with legal document preparation and process management. Currently in early implementation stage with initial users.",
-      experiences: [
+      bulletPoints: [
         "Creating efficiency tools to significantly improve legal workflow in property transactions",
         "Building toward a comprehensive platform connecting all stakeholders in the real estate process",
         "Designing for transparency, allowing all parties to track transaction status in real time",
         "Applying software expertise to create a frictionless experience for real estate transactions"
       ],
+      bulletTitle: "Key Experiences:",
       conclusion: "This early-stage venture combines technical expertise with real industry insights, focusing on solving key friction points in the traditional property transaction process. This version is more general and doesn't reveal your specific target market strategy, giving you flexibility while still communicating the core value of your venture.",
       icon: Lightbulb
     },
@@ -77,13 +86,14 @@ const Journey = () => {
       title: "Co-Founder",
       at: "Nomlify",
       description: "Developed concept for a specialized digital cookbook platform targeting parents of toddlers. Nomlify aimed to help parents identify and modify recipes with age-appropriate ingredients for young children.",
-      experiences: [
+      bulletPoints: [
         "Participated in a startup accelerator program, refining our business concept through multiple pivots based on market feedback",
         "Worked through the early stages of ideation and validation, learning crucial product-market fit principles",
         "Gained hands-on experience with lean startup methodology and customer development processes",
-        "Created initial website (nomlify.com) in Czech to test concept viability with potential users",
+        "Created initial website (nomlify.com) in Czech to test concept viability with potential users"
       ],
-      conclusion: "Though we didn't reach the app development phase, this entrepreneurial journey was truly mind-shifting. The accelerator experience transformed my perspective on product development, revealing the complex interplay between technical innovation and market needs. These insights continue to influence my approach to software development and problem-solving in ways that traditional employment couldn't provide.RetryClaude can make mistakes. Please double-check responses.",
+      bulletTitle: "Key Experiences:",
+      conclusion: "Though we didn't reach the app development phase, this entrepreneurial journey was truly mind-shifting. The accelerator experience transformed my perspective on product development, revealing the complex interplay between technical innovation and market needs. These insights continue to influence my approach to software development and problem-solving in ways that traditional employment couldn't provide.",
       icon: Lightbulb
     }
   ];
@@ -112,23 +122,14 @@ const Journey = () => {
       <div className="bg-background rounded-md p-6 subtle-shadow">
         <p className="text-foreground/80 mb-4">{item.description}</p>
         
-        {item.achievements && item.achievements.length > 0 && (
+        {item.bulletPoints && item.bulletPoints.length > 0 && (
           <div className="mt-2">
-            <h4 className="text-sm font-medium text-foreground/70 mb-2">Key Achievements:</h4>
+            {item.bulletTitle && (
+              <h4 className="text-sm font-medium text-foreground/70 mb-2">{item.bulletTitle}</h4>
+            )}
             <ul className="list-disc pl-5 space-y-1">
-              {item.achievements.map((achievement, i) => (
-                <li key={i} className="text-foreground/80 text-sm">{achievement}</li>
-              ))}
-            </ul>
-          </div>
-        )}
-        
-        {item.experiences && item.experiences.length > 0 && (
-          <div className="mt-2">
-            <h4 className="text-sm font-medium text-foreground/70 mb-2">Key Experiences:</h4>
-            <ul className="list-disc pl-5 space-y-1">
-              {item.experiences.map((experience, i) => (
-                <li key={i} className="text-foreground/80 text-sm">{experience}</li>
+              {item.bulletPoints.map((point, i) => (
+                <li key={i} className="text-foreground/80 text-sm">{point}</li>
               ))}
             </ul>
           </div>
