@@ -70,8 +70,9 @@ const Contact = () => {
                 visible && "animate-fade-in",
                 `animate-delay-${index * 200}`
               )}
+              style={{ wordBreak: 'break-word' }}
             >
-              <div className="p-2 bg-accent/50 rounded-full">
+              <div className="shrink-0 p-2 bg-accent/50 rounded-full">
                 <item.icon size={20} className="text-primary" />
               </div>
               <div>
