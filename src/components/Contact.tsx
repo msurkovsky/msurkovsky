@@ -26,25 +26,30 @@ const Contact = () => {
       icon: Mail,
       label: "Email",
       value: "martint@surkovsky.cz",
-      link: "mailto:martin@surkovsky.cz"
+      link: "mailto:martin@surkovsky.cz",
+      disabled: false
     },
     {
       icon: Github,
       label: "GitHub",
       value: "github.com/msurkovsky",
-      link: "https://github.com/msurkovsky"
+      link: "https://github.com/msurkovsky",
+      disabled: false
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       value: "linkedin.com/in/msurkovsky",
-      link: "https://linkedin.com/in/msurkovsky"
+      link: "https://linkedin.com/in/msurkovsky",
+      disabled: false
     },
     {
       icon: Globe,
       label: "Personal Blog",
       value: "blog.surkovsky.cz",
-      link: "https://blog.surkovsky.cz"
+      link: "https://blog.surkovsky.cz",
+      disabled: true, // Set to disabled
+      disabledReason: "Coming soon! First post in progress."
     }
   ];
   
@@ -60,26 +65,50 @@ const Contact = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {contactItems.map((item, index) => (
-            <a 
+            <div
               key={index}
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
               className={cn(
-                "flex items-center gap-4 p-6 bg-background rounded-lg subtle-shadow transition-all hover:shadow-md hover:-translate-y-1 opacity-0",
+                "flex items-center gap-4 p-6 bg-background rounded-lg subtle-shadow transition-all opacity-0",
+                !item.disabled && "hover:shadow-md hover:-translate-y-1",
+                item.disabled && "cursor-not-allowed opacity-70",
                 visible && "animate-fade-in",
                 `animate-delay-${index * 200}`
               )}
               style={{ wordBreak: 'break-word' }}
             >
-              <div className="shrink-0 p-2 bg-accent/50 rounded-full">
-                <item.icon size={20} className="text-primary" />
+              <div className={cn(
+                "shrink-0 p-2 rounded-full",
+                item.disabled ? "bg-gray-200 dark:bg-gray-700" : "bg-accent/50"
+              )}>
+                <item.icon size={20} className={item.disabled ? "text-gray-400 dark:text-gray-500" : "text-primary"} />
               </div>
               <div className="min-w-0">
                 <p className="text-sm text-foreground/60">{item.label}</p>
-                <p className="text-foreground">{item.value}</p>
+                <p className={cn(
+                  "text-foreground",
+                  item.disabled && "text-gray-400 dark:text-gray-500"
+                )}>
+                  {item.value}
+                </p>
+                {item.disabled && item.disabledReason && (
+                  <p className="text-xs text-gray-400 dark:text-gray-500 mt-1 italic">
+                    {item.disabledReason}
+                  </p>
+                )}
               </div>
-            </a>
+              
+              {!item.disabled && (
+                <a 
+                  href={item.link} 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 w-full h-full"
+                  aria-label={`Visit ${item.label}`}
+                >
+                  <span className="sr-only">Visit {item.label}</span>
+                </a>
+              )}
+            </div>
           ))}
         </div>
       </div>
