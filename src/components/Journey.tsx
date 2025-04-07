@@ -179,7 +179,7 @@ const Journey = () => {
   };
   
   return (
-    <Section id="journey" className="bg-accent/30">
+    <Section id="journey" title="Professional Journey" className="bg-accent/30">
       <div className="max-w-5xl mx-auto px-2">
         <h2 className="text-3xl md:text-4xl mb-8 font-light">Professional Journey</h2>
         <div className="section-divider" />
