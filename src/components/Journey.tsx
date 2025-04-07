@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Book, Briefcase, Lightbulb } from 'lucide-react';
@@ -135,9 +134,9 @@ const Journey = () => {
       <div 
         key={index} 
         className={cn(
-          "grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-8 opacity-0",
-          visible && "animate-fade-in",
-          `animate-delay-${index * 200}`
+          "grid grid-cols-1 md:grid-cols-[1fr_4fr] gap-4 md:gap-8",
+          visible ? "animate-fade-in" : "",
+          visible ? `animate-delay-${index * 200}` : ""
         )}
       >
         <div>
@@ -152,7 +151,7 @@ const Journey = () => {
             </span>
           )}
         </div>
-        <div className="bg-background rounded-md p-6 subtle-shadow">
+        <div className="bg-background rounded-md p-4 md:p-6 subtle-shadow mb-6">
           {item.description && renderParagraphs(item.description)}
           
           {item.bulletPoints && item.bulletPoints.length > 0 && (
@@ -180,18 +179,15 @@ const Journey = () => {
   
   return (
     <Section id="journey" title="Professional Journey" className="bg-accent/30">
-      <div className="max-w-5xl mx-auto px-2">
-        <h2 className="text-3xl md:text-4xl mb-8 font-light">Professional Journey</h2>
-        <div className="section-divider" />
-        
-        <div className="space-y-12 mt-12">
+      <div className="max-w-5xl mx-auto px-4">
+        <div className="space-y-8 mt-6">
           {professionalJourney.map((item, index) => renderJourneyItem(item, index, professionalJourney.length))}
         </div>
         
-        <h3 className="text-2xl md:text-3xl mt-16 mb-6 font-light">Entrepreneurial Ventures</h3>
+        <h3 className="text-2xl md:text-3xl mt-12 mb-6 font-light">Entrepreneurial Ventures</h3>
         <div className="section-divider" />
         
-        <div className="space-y-12 mt-12">
+        <div className="space-y-8 mt-6">
           {entrepreneurialVentures.map((item, index) => renderJourneyItem(item, index + professionalJourney.length, entrepreneurialVentures.length))}
         </div>
       </div>
