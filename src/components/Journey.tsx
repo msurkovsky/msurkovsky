@@ -44,31 +44,14 @@ const Journey = () => {
       period: "2023 - Present",
       title: "Senior Software Engineer",
       at: "Rockwell Automation",
-      description: [
-        {
-          text: "Initially contributed to the CIP Stack development using Rust. Following a team reorganization, I now work as part of a team building the Shadow Service - a suite of microservices that mirror selected industrial edge device functionality to the cloud.",
-          style: "text-foreground/80"
-        }
-      ],
-      bulletPoints: [
-        "Developing microservices that mirror industrial edge device functionality to the cloud",
-        "Enabling data flow from controllers and other industrial hardware to cloud environments at configurable service levels",
-        "Providing a unified access point for client applications",
-        "Alleviating bandwidth constraints on industrial networks through optimized architecture"
-      ],
-      bulletTitle: "Key Responsibilities:",
+      description: "Initially contributed to the CIP Stack development using Rust. Following a team reorganization, I now work as part of a team building the Shadow Service - a suite of microservices that mirror selected industrial edge device functionality to the cloud. This architecture enables data flow from controllers and other industrial hardware to cloud environments at configurable service levels, providing a unified access point for client applications. This approach alleviates bandwidth constraints on industrial networks.",
       icon: Briefcase
     },
     {
       period: "2018 - 2023",
       title: "Researcher",
       at: "VSB - Technical University of Ostrava, IT4Innovations - National Supercomputing Center",
-      description: [
-        {
-          text: "Contributed to multiple national and international research projects, specializing in translating complex scientific requirements into scalable software solutions across diverse domains.",
-          style: "text-foreground/80"
-        }
-      ],
+      description: "Contributed to multiple national and international research projects, specializing in translating complex scientific requirements into scalable software solutions across diverse domains.",
       bulletPoints: [
         "Enhanced a traffic simulator's scalability for high-performance computing environments",
         "Modernized the viaRodos project, successfully migrating it from legacy systems to current technologies after the original maintainer's departure",
@@ -82,12 +65,7 @@ const Journey = () => {
       period: "2012 - 2018",
       title: "Researcher",
       at: "VSB - Technical University of Ostrava, Department of Computer Science",
-      description: [
-        {
-          text: "Conducted research while pursuing my PhD, contributing to multiple software projects across various computing domains.",
-          style: "text-foreground/80"
-        }
-      ],
+      description: "Conducted research while pursuing my PhD, contributing to multiple software projects across various computing domains.",
       bulletPoints: [
         "Contributed to the development of a visual programming tool designed to simplify access to high-performance computing resources",
         "Assisted in creating a framework for generating discrete structures from basic building blocks such as Cartesian products and mappings, with capabilities to enumerate all elements, all non-isomorphic structures, or generate random elements",
@@ -102,20 +80,15 @@ const Journey = () => {
     {
       period: "2025 - Present",
       title: "Founder",
-      at: "Real Estate Tech",
-      description: [
-        {
-          text: "Developing a digital platform to streamline real estate transactions, beginning with legal document preparation and process management. Currently in early implementation stage with initial users.",
-          style: "text-foreground/80"
-        }
-      ],
+      at: "Doqra",
+      description: "Developing a digital platform to streamline real estate transactions, beginning with legal document preparation and process management. Currently in early implementation stage with initial users.",
+      bulletTitle: "Vision & Progress:",
       bulletPoints: [
         "Creating efficiency tools to significantly improve legal workflow in property transactions",
         "Building toward a comprehensive platform connecting all stakeholders in the real estate process",
         "Designing for transparency, allowing all parties to track transaction status in real time",
         "Applying software expertise to create a frictionless experience for real estate transactions"
       ],
-      bulletTitle: "Key Experiences:",
       conclusion: "This early-stage venture combines technical expertise with real industry insights, focusing on solving key friction points in the traditional property transaction process. This version is more general and doesn't reveal your specific target market strategy, giving you flexibility while still communicating the core value of your venture.",
       icon: Lightbulb
     },
