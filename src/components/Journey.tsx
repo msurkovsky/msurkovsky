@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Book, Briefcase, Lightbulb } from 'lucide-react';
@@ -21,13 +20,11 @@ const Journey = () => {
     return () => observer.disconnect();
   }, []);
   
-  // Renamed to Paragraph to better reflect its purpose
   type Paragraph = {
     text: string;
     style?: string; // Optional style for the paragraph
   };
   
-  // Updated journey item type to use Paragraph type
   type JourneyItem = {
     period: string;
     title: string;
@@ -115,13 +112,18 @@ const Journey = () => {
   ];
   
   const renderJourneyItem = (item: JourneyItem, index: number, totalItems: number) => {
-    // Helper function to render paragraphs (works for both description and conclusion)
     const renderParagraphs = (content: string | Paragraph[]) => {
       if (typeof content === 'string') {
         return <p className="text-foreground/80 mb-4">{content}</p>;
       } else if (Array.isArray(content)) {
         return content.map((paragraph, pIndex) => (
-          <p key={pIndex} className={cn("mb-4", paragraph.style)}>
+          <p 
+            key={pIndex} 
+            className={cn(
+              "mb-4", 
+              paragraph.style || "text-foreground/70 italic text-sm"
+            )}
+          >
             {paragraph.text}
           </p>
         ));
