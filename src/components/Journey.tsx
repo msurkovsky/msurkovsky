@@ -21,21 +21,21 @@ const Journey = () => {
     return () => observer.disconnect();
   }, []);
   
-  // Updated type to support multiple descriptions
-  type JourneyDescription = {
+  // Renamed to Paragraph to better reflect its purpose
+  type Paragraph = {
     text: string;
-    style?: string; // Optional style for the description paragraph
+    style?: string; // Optional style for the paragraph
   };
   
-  // Updated journey item type
+  // Updated journey item type to use Paragraph type
   type JourneyItem = {
     period: string;
     title: string;
     at?: string;
-    description?: string | JourneyDescription[]; // Can be a string or array of descriptions
+    description?: string | Paragraph[]; // Can be a string or array of paragraphs
     bulletPoints?: string[];
     bulletTitle?: string;
-    conclusion?: string;
+    conclusion?: string | Paragraph[]; // Updated to match the same structure as description
     icon: typeof Book | typeof Briefcase | typeof Lightbulb;
   };
   
@@ -142,14 +142,14 @@ const Journey = () => {
   ];
   
   const renderJourneyItem = (item: JourneyItem, index: number, totalItems: number) => {
-    // Helper function to render description(s)
-    const renderDescription = (desc: string | JourneyDescription[]) => {
-      if (typeof desc === 'string') {
-        return <p className="text-foreground/80 mb-4">{desc}</p>;
-      } else if (Array.isArray(desc)) {
-        return desc.map((description, descIndex) => (
-          <p key={descIndex} className={cn("mb-4", description.style)}>
-            {description.text}
+    // Helper function to render paragraphs (works for both description and conclusion)
+    const renderParagraphs = (content: string | Paragraph[]) => {
+      if (typeof content === 'string') {
+        return <p className="text-foreground/80 mb-4">{content}</p>;
+      } else if (Array.isArray(content)) {
+        return content.map((paragraph, pIndex) => (
+          <p key={pIndex} className={cn("mb-4", paragraph.style)}>
+            {paragraph.text}
           </p>
         ));
       }
@@ -178,7 +178,7 @@ const Journey = () => {
           )}
         </div>
         <div className="bg-background rounded-md p-6 subtle-shadow">
-          {item.description && renderDescription(item.description)}
+          {item.description && renderParagraphs(item.description)}
           
           {item.bulletPoints && item.bulletPoints.length > 0 && (
             <div className="mt-2">
@@ -195,7 +195,7 @@ const Journey = () => {
           
           {item.conclusion && (
             <div className="mt-4 pt-3 border-t border-border/50">
-              <p className="text-foreground/80 text-sm italic">{item.conclusion}</p>
+              {renderParagraphs(item.conclusion)}
             </div>
           )}
         </div>
