@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Book, Briefcase, Lightbulb } from 'lucide-react';
@@ -178,8 +179,8 @@ const Journey = () => {
   };
   
   return (
-    <section id="journey" className="section bg-accent/30">
-      <div className="max-w-5xl mx-auto">
+    <Section id="journey" className="bg-accent/30">
+      <div className="max-w-5xl mx-auto px-2">
         <h2 className="text-3xl md:text-4xl mb-8 font-light">Professional Journey</h2>
         <div className="section-divider" />
         
@@ -194,7 +195,7 @@ const Journey = () => {
           {entrepreneurialVentures.map((item, index) => renderJourneyItem(item, index + professionalJourney.length, entrepreneurialVentures.length))}
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 
