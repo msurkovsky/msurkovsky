@@ -37,8 +37,14 @@ const Projects = () => {
       tags: ["Cloud", "Microservices", "Rust", "Rest API", "gRPC", "Docker", "Kubernetes", "Cross-functional collaboration"]
     },
     {
+      shortName: "Doqra",
+      title: "Redefining Property Transactions with Transparency and Efficiency",
+      description: "Doqra is my latest entrepreneurial venture, aimed at transforming property transactions for the digital age. This web application is designed to simplify the complex process of buying and selling properties by automating key tasks, ensuring deadlines are met, and enhancing transparency. Built in close collaboration with early adopters, Doqra leverages a modern tech stack to deliver a seamless and efficient experience for all stakeholders involved in real estate transactions.",
+      tags: ["Web application", "Real estate", "Document management", "User authentication", "Transaction tracking", "React", "Node.js"],
+    },
+    {
       shortName: "Nomlify",
-      title: "Your Personal Cookbook for Toddlers.",
+      title: "Your Personal Cookbook for Toddlers",
       description: "Nomlify was a passion project created to participate in a startup accelerator program. As the founder, I led the initiative, driving the concept and execution. Nomlify was envisioned as a mobile application to help parents manage their toddlers' meals by gathering recipes from various sources, customizing them, and discovering new meal ideas. The app aimed to assist with meal planning, shopping, and identifying potentially harmful ingredients. The proposed tech stack included Flutter for the frontend and a C# backend hosted on Azure.",
       tags: ["Mobile platform", "Flutter", "Azure", "Team Management", "Startup journey", "Product definition", "Market validation"],
       link: "https://nomlify.com"
@@ -53,11 +59,17 @@ const Projects = () => {
     {
       shortName: "viaRodos",
       title: "Monitoring of Traffic Flows on Selected Roads in the Czech Republic",
-      description: "I played a key role in the modernization of viaRodos, a system for monitoring current traffic situation. The project involved migrating the software from legacy systems to current technologies, ensuring its continued relevance and usability. My contributions included enhancing the software's architecture, improving performance, and integrating modern features to meet the evolving needs of users.",
-      tags: ["Traffic monitoring", "Visualization", "C#", "Postgres", "Legacy System Modernization"],
+      description: "I played a key role in modernizing viaRodos, a system designed to monitor real-time traffic conditions on selected roads in the Czech Republic. The project focused on migrating the software from legacy systems to modern technologies, ensuring long-term maintainability and usability. My contributions included redesigning the software architecture, optimizing performance, and integrating advanced features to address the evolving needs of end-users and stakeholders.",
+      tags: ["Traffic monitoring", "Visualization", "C#", "PostgresSQL", "System Modernization", "Real-Time Systems"],
       link: "https://viarodos.cz"
-
-    }
+    },
+    {
+      shortName: "Morpheus",
+      title: "Visual analysis of message-passing applications",
+      description: "Morpheus was developed as a proof-of-concept tool during my PhD research. It is designed to visualize the communication patterns of message-passing applications, offering valuable insights into their behavior and performance characteristics. The tool helps developers analyze and optimize their applications by providing detailed visual representations of communication flows and performance metrics. Built using C++, LLVM, and Python, Morpheus demonstrates the potential of combining advanced visualization techniques with performance analysis.",
+      tags: ["Extraction Communication Model", "Performance Analysis", "Message-passing", "C++", "LLVM", "Python", "Docker", "Visualization"],
+      link: "https://github.com/IT4Innovations/morpheus"
+    },
   ];
   
   return (
