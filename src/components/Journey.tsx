@@ -90,7 +90,7 @@ const Journey = () => {
     },
     {
       period: "2023 - 2024",
-      title: "Co-Founder",
+      title: "Founder",
       at: "Nomlify",
       description: "Developed concept for a specialized digital cookbook platform targeting parents of toddlers. Nomlify aimed to help parents identify and modify recipes with age-appropriate ingredients for young children.",
       bulletPoints: [
