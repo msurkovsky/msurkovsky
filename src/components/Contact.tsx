@@ -25,8 +25,8 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "martint@surkovsky.cz",
-      link: "mailto:martin@surkovsky.cz",
+      value: "martin.surkovsky@gmail.com",
+      link: "mailto:martin.surkovsky@gmail.com",
       disabled: false
     },
     {
