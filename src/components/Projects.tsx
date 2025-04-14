@@ -31,24 +31,32 @@ const Projects = () => {
   
   const projects: Project[] = [
     {
-      shortName: "Edge to Cloud",
-      title: "Shadowing industrial controllers from edge to cloud",
+      shortName: "Shadow Services",
+      title: "Shadowing Industrial Edge Devices to Cloud",
       description: "As a member of a Rockwell Automation team, I contributed to a project enabling the seamless mirroring of industrial controllers and devices to the cloud. This architecture facilitates data flow from industrial hardware to cloud environments with configurable service levels, offering a unified access point for client applications. The solution effectively addresses bandwidth constraints on industrial networks, enhancing scalability and performance.",
-      tags: ["Cloud", "Microservices", "Rust", "Rest API", "gRPC", "Docker", "Kubernetes", "Cross-functional collaboration"],
-      link: "https://www.rockwellautomation.com"
+      tags: ["Cloud", "Microservices", "Rust", "Rest API", "gRPC", "Docker", "Kubernetes", "Cross-functional collaboration"]
     },
     {
       shortName: "Nomlify",
-      title: "Nomlify - Your personal cookbook for the toddlers.",
+      title: "Your Personal Cookbook for Toddlers.",
       description: "Nomlify was a passion project created to participate in a startup accelerator program. As the founder, I led the initiative, driving the concept and execution. Nomlify was envisioned as a mobile application to help parents manage their toddlers' meals by gathering recipes from various sources, customizing them, and discovering new meal ideas. The app aimed to assist with meal planning, shopping, and identifying potentially harmful ingredients. The proposed tech stack included Flutter for the frontend and a C# backend hosted on Azure.",
-      tags: ["Mobile platform", "Flutter", "Azure", "Team Management", "Startup journey", "Product definition", "Market validation"]
+      tags: ["Mobile platform", "Flutter", "Azure", "Team Management", "Startup journey", "Product definition", "Market validation"],
+      link: "https://nomlify.com"
     },
     {
       shortName: "Ruth",
-      title: "Ruth - Distributed Traffic Simulator",
+      title: "Distributed Traffic Simulator",
       description: "As the lead developer and later team lead, I worked on Ruth, a distributed traffic simulator designed for high-performance computing (HPC) clusters. The project leveraged Python and Rust to combine performance with ease of use. Ruth utilized OpenStreetMap (OSM) data for realistic simulations and provided advanced visualizations to analyze traffic patterns and behaviors, enabling insights into complex traffic systems.",
       tags: ["Distributed computing", "HPC", "Traffic Simulation", "Python", "Rust", "OSM Maps", "Visualizations"],
-      link: "https://github.com/ruth-simulator"
+      link: "https://github.com/IT4Innovations/ruth"
+    },
+    {
+      shortName: "viaRodos",
+      title: "Monitoring of Traffic Flows on Selected Roads in the Czech Republic",
+      description: "I played a key role in the modernization of viaRodos, a system for monitoring current traffic situation. The project involved migrating the software from legacy systems to current technologies, ensuring its continued relevance and usability. My contributions included enhancing the software's architecture, improving performance, and integrating modern features to meet the evolving needs of users.",
+      tags: ["Traffic monitoring", "Visualization", "C#", "Postgres", "Legacy System Modernization"],
+      link: "https://viarodos.cz"
+
     }
   ];
   
