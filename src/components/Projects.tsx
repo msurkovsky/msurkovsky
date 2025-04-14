@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import Section from './Section';
 import { cn } from '@/lib/utils';
@@ -87,7 +86,7 @@ const Projects = () => {
             <div className={cn(
               "h-48 w-full bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-6"
             )}>
-              <h3 className="text-2xl font-medium text-center text-accent-foreground">{project.shortName}</h3>
+              <h3 className="text-3xl font-medium text-center text-accent-foreground">{project.shortName}</h3>
             </div>
             <div className="p-6 space-y-4">
               <div className="flex justify-between items-start">
@@ -123,4 +122,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
