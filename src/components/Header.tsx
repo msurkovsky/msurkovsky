@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from 'react';
 import { ArrowDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -19,8 +18,8 @@ const Header = () => {
     }
   };
   
-  // Image path will be set here when you add your actual image
-  const profileImagePath = `${import.meta.env.BASE_URL}/images/msurkovsky.png`;
+  // Simplified image path - remove BASE_URL handling since we're now using a custom domain
+  const profileImagePath = '/images/msurkovsky.png';
   
   return (
     <header className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-12 lg:px-24 pt-20 md:pt-0">
