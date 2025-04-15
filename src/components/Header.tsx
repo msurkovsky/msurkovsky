@@ -28,19 +28,19 @@ const Header = () => {
           "md:col-span-3 space-y-6 opacity-0",
           visible && "animate-fade-in"
         )}>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-balance">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-light leading-tight">
             Engineer by background,<br/> founder by passion
           </h1>
-          <p className="text-lg md:text-xl text-foreground/80 max-w-lg">
+          <p className="text-base md:text-xl text-foreground/80 max-w-lg">
             With over 20 years of experience spanning academic research, corporate software engineering, and entrepreneurial ventures.
           </p>
           <div className="pt-4">
             <div className="flex flex-col">
-              <p className="text-xl md:text-2xl italic text-foreground/90">
+              <p className="text-lg md:text-2xl italic text-foreground/90">
                 "Fortune favors the prepared mind"
               </p>
               <div className="flex justify-end mt-2 max-w-md">
-                <p className="text-base md:text-lg text-primary">
+                <p className="text-sm md:text-lg text-primary">
                   — Louis Pasteur
                 </p>
               </div>
