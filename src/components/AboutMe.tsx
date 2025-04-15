@@ -12,16 +12,19 @@ const AboutMe = () => {
     >
       <div className="space-y-6 text-foreground/90">
         <p>
-          I'm a backend and cloud engineer with a strong foundation in distributed systems and infrastructure. My journey in software development has been driven by a passion for building efficient, scalable, and maintainable applications. While I've worked with various programming languages and technologies, I've recently been focusing on Rust and Python. I'm always eager to explore and learn new technologies, so I'm open to working with other programming languages as well.
+          Building software that stands the test of time and scales effortlessly? That's my sweet spot. I learned the value of maintainable code early on, and that lesson still shapes how I approach every project. While I'm comfortable across the full stack, my passion lies in the backend, where Rust and Python are my go-to tools for crafting robust solutions. I'm always eager to dive into new technologies that solve complex problems with elegance.
         </p>
         <p>
-          Beyond engineering, I'm deeply interested in entrepreneurship. I'm channeling my skills and experiences towards building innovative solutions and exploring startup opportunities. This dual focus allows me to bridge the gap between technical execution and business strategy.
+          Beyond the code, I'm energized by the world of entrepreneurship. I'm actively exploring startup ideas and using my technical skills to build innovative solutions. This dual perspective helps me connect technical execution with strategic vision.
         </p>
         <p>
-          In my professional experience, I've excelled in collaborative team environments and am known for being a team player. I have a strong foundation in research and problem-solving skills, and I pride myself on my ability to dive deeply into challenges to develop innovative solutions.
+          Collaboration is key in my book. I thrive in team environments and bring a strong foundation in research and problem-solving to the table. I'm known for digging deep to find thoughtful answers to challenging puzzles.
         </p>
         <p>
-          On a personal note, I'm happily married and a proud parent. While my spare time is limited, I cherish moments spent with my family and prioritize their needs above all else.
+          On a personal note, family is my priority. Being a husband and parent shapes my perspective and reminds me what truly matters.
+        </p>
+        <p>
+          If you're working on something exciting, curious about startup journeys, navigating technical complexities, or passionate about scalable systems — I'd genuinely enjoy connecting. Let's chat.
         </p>
       </div>
     </Section>
