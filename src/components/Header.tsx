@@ -29,7 +29,7 @@ const Header = () => {
           visible && "animate-fade-in"
         )}>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-light leading-tight text-balance">
-            Senior Software Engineer
+            Engineer by background,<br/> founder by passion
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 max-w-lg">
             With over 20 years of experience spanning academic research, corporate software engineering, and entrepreneurial ventures.
