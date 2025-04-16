@@ -23,9 +23,6 @@ const AboutMe = () => {
         <p>
           On a personal note, family is my priority. Being a husband and parent shapes my perspective and reminds me what truly matters.
         </p>
-        <p>
-          If you're working on something exciting, curious about startup journeys, navigating technical complexities, or passionate about scalable systems — I'd genuinely enjoy connecting. Let's chat.
-        </p>
       </div>
     </Section>
   );
