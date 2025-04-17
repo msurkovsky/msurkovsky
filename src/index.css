@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 15%;
 
-    --primary: 215 30% 50%;
+    --primary: 180 100% 25%; /* Teal */
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 40% 96.1%;
@@ -25,15 +25,15 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 210 30% 95%;
-    --accent-foreground: 215 30% 40%;
+    --accent: 180 100% 25%; /* Teal */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 215 30% 50%;
+    --ring: 180 100% 25%; /* Teal */
 
     --radius: 0.5rem;
 
@@ -45,6 +45,10 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
+    
+    /* Highlight colors */
+    --highlight-yellow: 51 100% 50%; /* #FFD700 */
+    --highlight-teal: 180 100% 25%; /* #008080 */
   }
 
   .dark {
@@ -57,8 +61,8 @@
     --popover: 240 10% 12%;
     --popover-foreground: 0 0% 95%;
 
-    --primary: 215 30% 60%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 51 100% 50%; /* Yellow for dark mode */
+    --primary-foreground: 240 10% 10%; /* Dark background for contrast */
 
     --secondary: 240 4% 16%;
     --secondary-foreground: 0 0% 95%;
@@ -66,15 +70,17 @@
     --muted: 240 4% 16%;
     --muted-foreground: 240 5% 65%;
 
-    --accent: 215 30% 20%;
-    --accent-foreground: 215 30% 70%;
+    --accent: 51 100% 50%; /* Yellow for dark mode */
+    --accent-foreground: 240 10% 10%; /* Dark background for contrast */
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 240 4% 20%;
     --input: 240 4% 20%;
-    --ring: 215 30% 60%;
+    --ring: 51 100% 50%; /* Yellow */
+    
+    --charcoal: 0 0% 10%; /* #1a1a1a */
   }
 }
 
@@ -139,5 +145,38 @@
   
   .subtle-shadow {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  }
+  
+  /* New highlight utilities */
+  .bg-charcoal {
+    background-color: #1a1a1a;
+  }
+  
+  .text-highlight-yellow {
+    color: #FFD700;
+  }
+  
+  .bg-highlight-yellow {
+    background-color: #FFD700;
+  }
+  
+  .text-highlight-teal {
+    color: #008080;
+  }
+  
+  .bg-highlight-teal {
+    background-color: #008080;
+  }
+  
+  .hover-teal-light {
+    @apply hover:text-highlight-teal transition-colors duration-200;
+  }
+  
+  .hover-yellow-dark {
+    @apply hover:text-highlight-yellow transition-colors duration-200;
+  }
+  
+  .dark-section {
+    @apply bg-charcoal text-white;
   }
 }

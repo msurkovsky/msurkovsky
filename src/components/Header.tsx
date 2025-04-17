@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import { ArrowDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -40,7 +41,7 @@ const Header = () => {
                 "Fortune favors the prepared mind"
               </p>
               <div className="flex justify-end mt-2 max-w-md">
-                <p className="text-sm md:text-lg text-primary">
+                <p className="text-sm md:text-lg text-highlight-teal">
                   — Louis Pasteur
                 </p>
               </div>
@@ -66,7 +67,7 @@ const Header = () => {
       <button 
         onClick={scrollToJourney}
         className={cn(
-          "absolute bottom-12 opacity-0 hover:text-primary transition-colors",
+          "absolute bottom-12 opacity-0 hover:text-highlight-teal transition-colors",
           visible && "animate-fade-in animate-delay-800"
         )}
         aria-label="Scroll down"

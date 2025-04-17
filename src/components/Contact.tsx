@@ -54,7 +54,7 @@ const Contact = () => {
   ];
   
   return (
-    <Section id="contact" title="Contact" className="bg-accent/30 pb-32">
+    <Section id="contact" title="Contact" className="bg-light-gray pb-32">
       <div className={cn(
         "max-w-2xl mx-auto opacity-0",
         visible && "animate-fade-in"
@@ -68,7 +68,7 @@ const Contact = () => {
             <div
               key={index}
               className={cn(
-                "flex items-center gap-4 p-6 bg-background rounded-lg subtle-shadow transition-all opacity-0",
+                "flex items-center gap-4 p-6 bg-white rounded-lg subtle-shadow transition-all opacity-0",
                 !item.disabled && "hover:shadow-md hover:-translate-y-1",
                 item.disabled && "cursor-not-allowed opacity-70",
                 visible && "animate-fade-in",
@@ -78,14 +78,15 @@ const Contact = () => {
             >
               <div className={cn(
                 "shrink-0 p-2 rounded-full",
-                item.disabled ? "bg-gray-200 dark:bg-gray-700" : "bg-accent/50"
+                item.disabled ? "bg-gray-200 dark:bg-gray-700" : "bg-highlight-teal text-white"
               )}>
-                <item.icon size={20} className={item.disabled ? "text-gray-400 dark:text-gray-500" : "text-primary"} />
+                <item.icon size={20} className={item.disabled ? "text-gray-400 dark:text-gray-500" : "text-white"} />
               </div>
               <div className="min-w-0">
                 <p className="text-sm text-foreground/60">{item.label}</p>
                 <p className={cn(
                   "text-foreground",
+                  !item.disabled && "text-highlight-teal",
                   item.disabled && "text-gray-400 dark:text-gray-500"
                 )}>
                   {item.value}

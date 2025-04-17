@@ -62,7 +62,16 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+                // Add our highlight colors
+                'highlight-yellow': '#FFD700',
+                'highlight-teal': '#008080',
+                'charcoal': '#1a1a1a',
+                'light-gray': {
+                    DEFAULT: '#f3f3f3',
+                    100: '#F1F1F1',
+                    200: '#C8C8C9',
+                }
 			},
 			fontFamily: {
 				sans: ['Inter', 'sans-serif'],

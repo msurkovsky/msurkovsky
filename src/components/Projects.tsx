@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import Section from './Section';
 import { cn } from '@/lib/utils';
@@ -72,42 +73,42 @@ const Projects = () => {
   ];
   
   return (
-    <Section id="projects" title="Selected Projects" fullWidth>
+    <Section id="projects" title="Selected Projects" fullWidth className="bg-charcoal text-white">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div 
             key={index} 
             className={cn(
-              "group bg-background rounded-lg overflow-hidden subtle-shadow transition-all hover:shadow-lg opacity-0",
+              "group bg-charcoal rounded-lg overflow-hidden subtle-shadow transition-all border border-white/10 hover:shadow-lg opacity-0",
               visible && "animate-fade-in",
               `animate-delay-${index * 200}`
             )}
           >
             <div className={cn(
-              "h-48 w-full bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-6"
+              "h-48 w-full bg-gradient-to-br from-[#1a1a1a] to-[#222] flex items-center justify-center p-6"
             )}>
-              <h3 className="text-3xl font-medium text-center text-accent-foreground">{project.shortName}</h3>
+              <h3 className="text-3xl font-medium text-center text-highlight-yellow">{project.shortName}</h3>
             </div>
             <div className="p-6 space-y-4">
               <div className="flex justify-between items-start">
-                <h4 className="text-xl font-medium">{project.title}</h4>
+                <h4 className="text-xl font-medium text-white">{project.title}</h4>
                 {project.link ? (
                   <a 
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group-hover:text-primary transition-colors"
+                    className="text-white/70 group-hover:text-highlight-yellow transition-colors"
                   >
                     <ExternalLink size={16} />
                   </a>
                 ) : <div />}
               </div>
-              <p className="text-foreground/70 text-sm">{project.description}</p>
+              <p className="text-white/70 text-sm">{project.description}</p>
               <div className="flex flex-wrap gap-2 pt-2">
                 {project.tags.map((tag, idx) => (
                   <span 
                     key={idx} 
-                    className="px-2 py-1 bg-accent/50 text-accent-foreground rounded-md text-xs"
+                    className="px-2 py-1 bg-white/10 text-white/90 rounded-md text-xs"
                   >
                     {tag}
                   </span>
