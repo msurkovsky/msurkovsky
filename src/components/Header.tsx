@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import { ArrowDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -66,12 +67,12 @@ const Header = () => {
       <button 
         onClick={scrollToJourney}
         className={cn(
-          "absolute bottom-12 opacity-0 hover:text-primary transition-colors",
+          "absolute bottom-12 opacity-0 bg-highlight-charcoal p-4 rounded-full hover:bg-highlight-charcoal/90 transition-colors",
           visible && "animate-fade-in animate-delay-800"
         )}
         aria-label="Scroll down"
       >
-        <ArrowDown size={32} className="animate-bounce" />
+        <ArrowDown size={32} className="text-highlight-yellow" />
       </button>
     </header>
   );

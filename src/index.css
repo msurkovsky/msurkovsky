@@ -90,6 +90,21 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-display font-light tracking-tight;
   }
+  
+  /* Yellow highlight should only be used on charcoal backgrounds */
+  .bg-highlight-charcoal a, 
+  .bg-highlight-charcoal button:hover,
+  .bg-highlight-charcoal .highlight {
+    @apply text-highlight-yellow;
+  }
+  
+  /* Teal highlight should only be used on light backgrounds */
+  .bg-background a:hover, 
+  .bg-card a:hover,
+  .bg-white a:hover,
+  .bg-secondary a:hover {
+    @apply text-highlight-teal;
+  }
 }
 
 @layer utilities {
@@ -139,5 +154,15 @@
   
   .subtle-shadow {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  }
+  
+  /* Call-to-action styles */
+  .cta-yellow {
+    @apply bg-highlight-charcoal text-highlight-yellow px-4 py-2 rounded-md hover:bg-highlight-charcoal/90 transition-colors;
+  }
+  
+  /* Accent styles */
+  .accent-teal {
+    @apply text-highlight-teal hover:underline;
   }
 }
