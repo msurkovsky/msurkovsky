@@ -1,8 +1,8 @@
-
 import { useEffect, useState } from 'react';
 import { ArrowDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 const Header = () => {
   const [visible, setVisible] = useState(false);
@@ -18,7 +18,7 @@ const Header = () => {
     }
   };
   
-  // Simplified image path
+  // Simplified image path - remove BASE_URL handling since we're now using a custom domain
   const profileImagePath = '/images/msurkovsky.png';
   
   return (
@@ -40,7 +40,7 @@ const Header = () => {
                 "Fortune favors the prepared mind"
               </p>
               <div className="flex justify-end mt-2 max-w-md">
-                <p className="text-sm md:text-lg text-highlight-teal">
+                <p className="text-sm md:text-lg text-primary">
                   — Louis Pasteur
                 </p>
               </div>
@@ -66,7 +66,7 @@ const Header = () => {
       <button 
         onClick={scrollToJourney}
         className={cn(
-          "absolute bottom-12 opacity-0 hover:text-highlight-teal transition-colors",
+          "absolute bottom-12 opacity-0 hover:text-primary transition-colors",
           visible && "animate-fade-in animate-delay-800"
         )}
         aria-label="Scroll down"
