@@ -62,12 +62,6 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				},
-				// New highlight colors
-				highlight: {
-					yellow: '#FFD700',
-					teal: '#008080',
-					charcoal: '#1a1a1a'
 				}
 			},
 			fontFamily: {

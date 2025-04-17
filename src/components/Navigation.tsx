@@ -60,7 +60,7 @@ const Navigation = () => {
             <button 
               key={item} 
               onClick={() => scrollTo(item)}
-              className="text-foreground/80 hover:text-highlight-teal transition-colors capitalize"
+              className="text-foreground/80 hover:text-foreground transition-colors capitalize"
             >
               {item}
             </button>
@@ -91,7 +91,7 @@ const Navigation = () => {
                 key={item} 
                 onClick={() => scrollTo(item)}
                 className={cn(
-                  "w-full py-3 px-6 rounded-md text-center text-foreground/80 hover:text-highlight-teal hover:bg-accent transition-all capitalize text-xl",
+                  "w-full py-3 px-6 rounded-md text-center text-foreground/80 hover:text-foreground hover:bg-accent transition-all capitalize text-xl",
                   "transform transition-all duration-300",
                   isOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
                   // Staggered animation delay for each menu item
