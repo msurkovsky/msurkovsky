@@ -147,7 +147,7 @@
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
   }
   
-  /* New highlight utilities */
+  /* Highlight utilities */
   .bg-charcoal {
     background-color: #1a1a1a;
   }
@@ -168,12 +168,13 @@
     background-color: #008080;
   }
   
-  .hover-teal-light {
-    @apply hover:text-highlight-teal transition-colors duration-200;
+  /* Hover utilities for highlights */
+  .hover-yellow {
+    @apply hover:text-highlight-yellow transition-colors duration-200;
   }
   
-  .hover-yellow-dark {
-    @apply hover:text-highlight-yellow transition-colors duration-200;
+  .hover-teal {
+    @apply hover:text-highlight-teal transition-colors duration-200;
   }
   
   .dark-section {
