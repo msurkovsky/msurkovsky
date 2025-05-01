@@ -7,36 +7,37 @@
 
 @layer base {
   :root {
-    --background: 0 0% 99%;
+    /* Simplified color palette */
+    --background: 0 0% 98%;
     --foreground: 0 0% 10%;
-
+    
     --card: 0 0% 100%;
     --card-foreground: 0 0% 10%;
-
+    
     --popover: 0 0% 100%;
     --popover-foreground: 0 0% 10%;
-
-    --primary: 42 87% 67%;
+    
+    --primary: 42 87% 67%;  /* Yellow/Gold */
     --primary-foreground: 0 0% 10%;
-
-    --secondary: 171 70% 40%;
+    
+    --secondary: 171 70% 40%;  /* Teal */
     --secondary-foreground: 0 0% 98%;
-
-    --muted: 210 40% 96.1%;
+    
+    --muted: 210 40% 96%;
     --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 0 0% 96%;
+    
+    --accent: 0 0% 95%;
     --accent-foreground: 0 0% 10%;
-
+    
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
-
+    
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 42 87% 67%;
-
+    
     --radius: 0.5rem;
-
+    
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
     --sidebar-primary: 240 5.9% 10%;
@@ -45,35 +46,36 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
-
+    
+    /* Simplified with just one charcoal value */
     --charcoal: 0 0% 10%;
   }
 
   .dark {
     --background: 0 0% 10%;
     --foreground: 0 0% 95%;
-
+    
     --card: 0 0% 13%;
     --card-foreground: 0 0% 95%;
-
+    
     --popover: 0 0% 13%;
     --popover-foreground: 0 0% 95%;
-
-    --primary: 42 87% 67%;
+    
+    --primary: 42 87% 67%;  /* Keeping yellow/gold */
     --primary-foreground: 0 0% 10%;
-
-    --secondary: 171 70% 40%;
+    
+    --secondary: 171 70% 40%;  /* Keeping teal */
     --secondary-foreground: 0 0% 98%;
-
+    
     --muted: 0 0% 15%;
     --muted-foreground: 0 0% 65%;
-
+    
     --accent: 0 0% 15%;
     --accent-foreground: 0 0% 95%;
-
+    
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
-
+    
     --border: 0 0% 20%;
     --input: 0 0% 20%;
     --ring: 42 87% 67%;
@@ -97,6 +99,7 @@
 }
 
 @layer utilities {
+  /* Simplified utilities */
   .section {
     @apply py-16 md:py-24 px-6 md:px-12 lg:px-24 max-w-screen-2xl mx-auto;
   }
@@ -109,6 +112,7 @@
     @apply w-12 h-px bg-border my-4;
   }
   
+  /* Animation delays */
   .animate-delay-200 {
     animation-delay: 200ms;
   }
@@ -125,22 +129,24 @@
     animation-delay: 800ms;
   }
   
-  .transition-delay-75ms {
+  /* Simplified transition delays */
+  .transition-delay-75 {
     transition-delay: 75ms;
   }
   
-  .transition-delay-150ms {
+  .transition-delay-150 {
     transition-delay: 150ms;
   }
   
-  .transition-delay-225ms {
+  .transition-delay-225 {
     transition-delay: 225ms;
   }
   
-  .transition-delay-300ms {
+  .transition-delay-300 {
     transition-delay: 300ms;
   }
   
+  /* Simplified shadows */
   .subtle-shadow {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   }
@@ -149,28 +155,33 @@
     box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
   }
   
-  .card-gradient {
-    @apply bg-gradient-to-br from-card to-secondary/5;
-  }
-  
-  .accent-border {
-    border: 1px solid rgba(var(--primary), 0.2);
-  }
-  
+  /* Simplified backgrounds */
   .bg-charcoal {
-    background-color: #1A1A1A;
+    @apply bg-[#1A1A1A];
   }
   
+  /* Consistent content cards */
+  .content-card {
+    @apply bg-card rounded-lg border border-border/40 p-6 depth-shadow;
+  }
+  
+  /* Dark cards */
   .dark-card {
-    @apply bg-charcoal border border-white/5 text-white;
+    @apply bg-charcoal rounded-lg border border-white/5 text-white p-6 depth-shadow;
   }
   
-  .primary-gradient {
-    @apply bg-gradient-to-r from-primary to-primary/80;
+  /* Yellow on dark backgrounds */
+  .yellow-highlight {
+    @apply text-primary font-medium;
   }
   
-  .secondary-gradient {
-    @apply bg-gradient-to-r from-secondary to-secondary/80;
+  /* Teal tags */
+  .teal-tag {
+    @apply bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm;
+  }
+  
+  /* Yellow tags (on dark bg) */
+  .yellow-tag {
+    @apply bg-primary/10 text-primary px-3 py-1 rounded-full text-sm;
   }
 }
-

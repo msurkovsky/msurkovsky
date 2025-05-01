@@ -61,10 +61,7 @@ const Expertise = () => {
                 <h4 className="text-xl font-medium mb-4">{area.category}</h4>
                 <div className="flex flex-wrap gap-2">
                   {area.skills.map((skill, idx) => (
-                    <span 
-                      key={idx} 
-                      className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm"
-                    >
+                    <span key={idx} className="teal-tag">
                       {skill}
                     </span>
                   ))}
@@ -83,7 +80,7 @@ const Expertise = () => {
             <ul className="space-y-6">
               {philosophies.map((philosophy, index) => (
                 <li key={index} className="flex items-start gap-4">
-                  <span className="text-primary font-display text-xl">0{index + 1}</span>
+                  <span className="yellow-highlight font-display text-xl">0{index + 1}</span>
                   <p className="text-white/80">{philosophy}</p>
                 </li>
               ))}
