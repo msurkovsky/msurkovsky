@@ -24,26 +24,38 @@ const Header = () => {
   return (
     <header className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-24 pt-24 md:pt-0 bg-background">
       <div className="max-w-screen-xl w-full mx-auto">
-        <div className={cn(
-          "space-y-6 opacity-0",
-          visible && "animate-fade-in"
-        )}>
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-none tracking-tight text-foreground">
-            Engineer<span className="text-[#0EA5E9]">.</span> <br />
-            Builder<span className="text-[#0EA5E9]">.</span> <br />
-            Founder<span className="text-[#0EA5E9]">.</span>
-          </h1>
-          <p className="text-lg md:text-xl text-foreground/80 max-w-lg my-6">
-            On a mission to simplify the complex.
-          </p>
+        <div className="flex flex-col md:flex-row md:items-center md:space-x-12">
+          <div className={cn(
+            "space-y-6 opacity-0",
+            visible && "animate-fade-in"
+          )}>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-none tracking-tight text-foreground">
+              Engineer<span className="text-[#0EA5E9]">.</span> <br />
+              Builder<span className="text-[#0EA5E9]">.</span> <br />
+              Founder<span className="text-[#0EA5E9]">.</span>
+            </h1>
+            <p className="text-lg md:text-xl text-foreground/80 max-w-lg my-6">
+              On a mission to simplify the complex.
+            </p>
+            
+            <div className="pt-4">
+              <Button 
+                onClick={scrollToContact}
+                className="bg-[#FFB800] hover:bg-[#FFB800]/90 text-black font-medium rounded-md px-6 py-6 h-auto"
+              >
+                Get in Touch
+              </Button>
+            </div>
+          </div>
           
-          <div className="pt-4">
-            <Button 
-              onClick={scrollToContact}
-              className="bg-[#FFB800] hover:bg-[#FFB800]/90 text-black font-medium rounded-md px-6 py-6 h-auto"
-            >
-              Get in Touch
-            </Button>
+          <div className={cn(
+            "mt-12 md:mt-0 opacity-0",
+            visible && "animate-fade-in animate-delay-200"
+          )}>
+            <Avatar className="w-48 h-48 md:w-64 md:h-64">
+              <AvatarImage src={profileImagePath} alt="Profile" className="object-cover" />
+              <AvatarFallback>MS</AvatarFallback>
+            </Avatar>
           </div>
         </div>
       </div>
