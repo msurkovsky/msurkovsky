@@ -87,8 +87,8 @@ const Projects = () => {
             <div className={cn(
               "h-48 w-full bg-[#1A1A1A] flex items-center justify-center p-6 relative overflow-hidden"
             )}>
-              <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-              <h3 className="text-3xl font-medium text-center text-white group-hover:text-secondary transition-colors duration-300">{project.shortName}</h3>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <h3 className="text-3xl font-medium text-center text-white group-hover:text-primary transition-colors duration-300">{project.shortName}</h3>
             </div>
             <div className="p-6 space-y-4 bg-background">
               <div className="flex justify-between items-start">
