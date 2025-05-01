@@ -10,7 +10,7 @@ const AboutMe = () => {
       title="About Me" 
       className="bg-charcoal text-white"
     >
-      <div className="space-y-6 text-white/90 max-w-4xl mx-auto px-6 py-8 rounded-lg depth-shadow bg-[#1A1A1A]/95">
+      <div className="space-y-6 text-white/90 max-w-4xl mx-auto p-8 rounded-lg depth-shadow bg-charcoal/95 border border-white/5">
         <p>
           Building software that stands the test of time and scales effortlessly? That's my sweet spot. I learned the value of maintainable code early on, and that lesson still shapes how I approach every project. While I'm comfortable across the full stack, my passion lies in the backend, where <span className="text-primary font-medium">Rust</span> and <span className="text-secondary font-medium">Python</span> are my go-to tools for crafting robust solutions. I'm always eager to dive into new technologies that solve complex problems with elegance.
         </p>

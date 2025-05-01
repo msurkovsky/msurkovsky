@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import Section from './Section';
 import { cn } from '@/lib/utils';
@@ -73,22 +72,38 @@ const Contact = () => {
                 item.disabled && "cursor-not-allowed opacity-70",
                 visible && "animate-fade-in",
                 `animate-delay-${index * 200}`,
-                item.disabled ? "bg-card/5 border border-white/5" : "bg-gradient-to-br from-card/10 to-card/5 border border-white/10"
+                item.disabled 
+                  ? "bg-card/5 border border-white/5" 
+                  : "bg-gradient-to-br from-background/10 to-background/5 border border-white/10"
               )}
               style={{ wordBreak: 'break-word' }}
             >
               <div className={cn(
                 "shrink-0 p-2 rounded-full",
-                item.disabled ? "bg-gray-700" : item.icon === Mail ? "bg-primary/20" : item.icon === Github ? "bg-secondary/20" : "bg-accent/20"
+                item.disabled 
+                  ? "bg-gray-700" 
+                  : item.icon === Mail 
+                    ? "bg-primary/20" 
+                    : item.icon === Github 
+                      ? "bg-secondary/20" 
+                      : "bg-accent/20"
               )}>
-                <item.icon size={20} className={item.disabled ? "text-gray-500" : item.icon === Mail ? "text-primary" : item.icon === Github ? "text-secondary" : "text-accent-foreground"} />
+                <item.icon 
+                  size={20} 
+                  className={
+                    item.disabled 
+                      ? "text-gray-500" 
+                      : item.icon === Mail 
+                        ? "text-primary" 
+                        : item.icon === Github 
+                          ? "text-secondary" 
+                          : "text-white"
+                  } 
+                />
               </div>
               <div className="min-w-0">
                 <p className="text-sm text-white/60">{item.label}</p>
-                <p className={cn(
-                  "text-white",
-                  item.disabled && "text-gray-500"
-                )}>
+                <p className={cn("text-white", item.disabled && "text-gray-500")}>
                   {item.value}
                 </p>
                 {item.disabled && item.disabledReason && (

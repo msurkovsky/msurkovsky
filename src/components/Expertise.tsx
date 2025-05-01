@@ -48,7 +48,7 @@ const Expertise = () => {
   ];
   
   return (
-    <Section id="expertise" title="Technical Expertise">
+    <Section id="expertise" title="Technical Expertise" className="bg-background">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
         <div className={cn(
           "space-y-12 opacity-0",
@@ -63,7 +63,7 @@ const Expertise = () => {
                   {area.skills.map((skill, idx) => (
                     <span 
                       key={idx} 
-                      className="px-3 py-1 bg-secondary/20 text-secondary-foreground rounded-full text-sm"
+                      className="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-sm"
                     >
                       {skill}
                     </span>
