@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import Section from './Section';
 import { cn } from '@/lib/utils';
@@ -62,7 +63,7 @@ const Expertise = () => {
                   {area.skills.map((skill, idx) => (
                     <span 
                       key={idx} 
-                      className="px-3 py-1 bg-accent text-accent-foreground rounded-full text-sm"
+                      className="px-3 py-1 bg-secondary/20 text-secondary-foreground rounded-full text-sm"
                     >
                       {skill}
                     </span>
@@ -78,12 +79,12 @@ const Expertise = () => {
           visible && "animate-fade-in animate-delay-400"
         )}>
           <h3 className="text-2xl font-light mb-8">Problem-Solving Philosophy</h3>
-          <div className="bg-accent/30 p-8 rounded-lg">
+          <div className="bg-charcoal p-8 rounded-lg text-white">
             <ul className="space-y-6">
               {philosophies.map((philosophy, index) => (
                 <li key={index} className="flex items-start gap-4">
                   <span className="text-primary font-display text-xl">0{index + 1}</span>
-                  <p className="text-foreground/80">{philosophy}</p>
+                  <p className="text-white/80">{philosophy}</p>
                 </li>
               ))}
             </ul>

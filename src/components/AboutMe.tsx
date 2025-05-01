@@ -8,7 +8,7 @@ const AboutMe = () => {
     <Section 
       id="about" 
       title="About Me" 
-      className="bg-[#1A1A1A] text-white"
+      className="bg-charcoal text-white"
     >
       <div className="space-y-6 text-white/90 max-w-4xl mx-auto px-6 py-8 rounded-lg depth-shadow bg-[#1A1A1A]/95">
         <p>

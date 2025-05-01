@@ -54,7 +54,7 @@ const Contact = () => {
   ];
   
   return (
-    <Section id="contact" title="Contact" className="bg-[#1A1A1A] text-white pb-32">
+    <Section id="contact" title="Contact" className="bg-charcoal text-white pb-32">
       <div className={cn(
         "max-w-2xl mx-auto opacity-0",
         visible && "animate-fade-in"

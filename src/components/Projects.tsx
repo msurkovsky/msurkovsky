@@ -85,9 +85,9 @@ const Projects = () => {
             )}
           >
             <div className={cn(
-              "h-48 w-full bg-[#1A1A1A] flex items-center justify-center p-6 relative overflow-hidden"
+              "h-48 w-full bg-charcoal flex items-center justify-center p-6 relative overflow-hidden"
             )}>
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               <h3 className="text-3xl font-medium text-center text-white group-hover:text-primary transition-colors duration-300">{project.shortName}</h3>
             </div>
             <div className="p-6 space-y-4 bg-background">
@@ -111,7 +111,7 @@ const Projects = () => {
                     key={idx} 
                     className={cn(
                       "px-2 py-1 rounded-md text-xs",
-                      idx % 2 === 0 ? "bg-primary/10 text-primary" : "bg-secondary/20 text-secondary-foreground"
+                      idx % 2 === 0 ? "bg-secondary/20 text-secondary" : "bg-accent/50 text-accent-foreground"
                     )}
                   >
                     {tag}
