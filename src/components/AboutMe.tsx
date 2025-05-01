@@ -9,19 +9,27 @@ const AboutMe = () => {
       title="About Me" 
       className="bg-charcoal text-white"
     >
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto bg-black/20 p-6 rounded-lg border border-white/10">
         <p className="mb-4 text-lg">
-          Building software that stands the test of time and scales effortlessly? That's my sweet spot. While I'm comfortable across the full stack, my passion lies in backend development, where <span className="text-primary font-medium">Rust</span> and <span className="text-secondary font-medium">Python</span> are my go-to tools.
+          Building software that stands the test of time and scales effortlessly is my passion. I specialize in backend development with <span className="text-primary">Rust</span> and <span className="text-primary">Python</span>.
         </p>
-        <p className="mb-4">
-          Beyond coding, I'm exploring entrepreneurship and using my technical skills to build innovative solutions.
-        </p>
-        <p className="mb-4">
-          I thrive in collaborative teams, bringing strong research and problem-solving skills to every project.
-        </p>
-        <p>
-          Family is my priority. Being a husband and parent shapes my perspective and reminds me what truly matters.
-        </p>
+        
+        <div className="my-6 border-l-4 border-primary pl-4 py-2">
+          <p className="mb-4">
+            Beyond coding, I'm exploring entrepreneurship and building innovative solutions.
+          </p>
+        </div>
+        
+        <ul className="space-y-2 mb-4">
+          <li className="flex items-center gap-2">
+            <span className="text-primary">•</span>
+            <p>Collaborative team player with strong problem-solving skills</p>
+          </li>
+          <li className="flex items-center gap-2">
+            <span className="text-primary">•</span>
+            <p>Family-oriented, with values that shape my work perspective</p>
+          </li>
+        </ul>
       </div>
     </Section>
   );

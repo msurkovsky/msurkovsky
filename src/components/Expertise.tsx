@@ -48,15 +48,15 @@ const Expertise = () => {
         "grid grid-cols-1 md:grid-cols-2 gap-8",
         visible && "animate-fade-in"
       )}>
-        <div>
-          <h3 className="text-xl font-medium mb-6">Technical Skills</h3>
-          <div className="space-y-6">
+        <div className="bg-white p-6 rounded-lg shadow-md">
+          <h3 className="text-xl font-medium mb-6 text-charcoal border-b pb-2">Technical Skills</h3>
+          <div className="space-y-4">
             {expertiseAreas.map((area, index) => (
               <div key={index} className="mb-4">
-                <h4 className="font-medium mb-3">{area.category}</h4>
+                <h4 className="font-medium mb-2 text-charcoal">{area.category}</h4>
                 <div className="flex flex-wrap gap-2">
                   {area.skills.map((skill, idx) => (
-                    <span key={idx} className="teal-tag">
+                    <span key={idx} className="bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm">
                       {skill}
                     </span>
                   ))}
@@ -66,18 +66,16 @@ const Expertise = () => {
           </div>
         </div>
         
-        <div>
-          <h3 className="text-xl font-medium mb-6">Problem-Solving Approach</h3>
-          <div className="bg-charcoal p-6 rounded-lg text-white">
-            <ul className="space-y-4">
-              {philosophies.map((philosophy, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <span className="text-primary font-medium">0{index + 1}.</span>
-                  <p>{philosophy}</p>
-                </li>
-              ))}
-            </ul>
-          </div>
+        <div className="bg-charcoal p-6 rounded-lg">
+          <h3 className="text-xl font-medium mb-6 text-white border-b border-white/20 pb-2">Approach</h3>
+          <ul className="space-y-4 text-white">
+            {philosophies.map((philosophy, index) => (
+              <li key={index} className="flex items-start gap-3">
+                <span className="text-primary font-bold">{index + 1}</span>
+                <p>{philosophy}</p>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </Section>

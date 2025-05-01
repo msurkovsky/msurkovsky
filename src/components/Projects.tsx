@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import Section from './Section';
 import { cn } from '@/lib/utils';
 import { ExternalLink } from 'lucide-react';
-import { Card, CardContent } from './ui/card';
 
 interface Project {
   title: string;
@@ -57,41 +56,41 @@ const Projects = () => {
     <Section id="projects" title="Selected Projects" className="bg-charcoal text-white">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {projects.map((project, index) => (
-          <Card 
+          <div 
             key={index} 
             className={cn(
-              "bg-black/20 border-white/10 text-white overflow-hidden",
+              "bg-white text-charcoal rounded-lg overflow-hidden shadow-lg",
               visible && "animate-fade-in",
               `animate-delay-${index * 200}`
             )}
           >
-            <div className="p-6 border-b border-white/10">
-              <h3 className="text-2xl text-primary mb-1">{project.shortName}</h3>
-              <p className="text-sm text-white/70">{project.title}</p>
+            <div className="bg-primary p-4">
+              <h3 className="text-xl font-medium text-charcoal">{project.shortName}</h3>
+              <p className="text-xs text-charcoal/70">{project.title}</p>
             </div>
-            <CardContent className="p-6">
-              <p className="text-sm text-white/80 mb-4">{project.description}</p>
-              <div className="flex flex-wrap gap-2">
+            <div className="p-4">
+              <p className="text-sm mb-4">{project.description}</p>
+              <div className="flex flex-wrap gap-2 mb-3">
                 {project.tags.slice(0, 3).map((tag, idx) => (
-                  <span key={idx} className="yellow-tag">
+                  <span key={idx} className="bg-secondary/10 text-secondary px-2 py-1 rounded-full text-xs">
                     {tag}
                   </span>
                 ))}
               </div>
               {project.link && (
-                <div className="mt-4 flex justify-end">
+                <div className="flex justify-end">
                   <a 
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-white/70 hover:text-primary transition-colors"
+                    className="text-secondary hover:text-primary transition-colors"
                   >
                     <ExternalLink size={16} />
                   </a>
                 </div>
               )}
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         ))}
       </div>
     </Section>
