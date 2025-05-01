@@ -14,7 +14,7 @@ const ProjectCard = ({ title, description, tag }: ProjectCardProps) => {
     <div className="bg-white p-6 rounded-md shadow-sm border border-gray-100">
       <h3 className="text-xl font-semibold mb-2">{title}</h3>
       <p className="text-gray-600 mb-4">{description}</p>
-      <div className="inline-block px-3 py-1 text-sm rounded-full bg-[#0EA5E9]/10 text-[#0EA5E9]">
+      <div className="inline-block px-3 py-1 text-sm rounded-full bg-[#14b8a6]/10 text-[#14b8a6]">
         {tag}
       </div>
     </div>

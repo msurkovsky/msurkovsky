@@ -32,17 +32,17 @@ const Contact = () => {
             <input 
               type="text" 
               placeholder="Name" 
-              className="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0EA5E9]"
+              className="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#14b8a6]"
             />
             <input 
               type="email" 
               placeholder="Email" 
-              className="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0EA5E9]"
+              className="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#14b8a6]"
             />
             <textarea 
               placeholder="Message" 
               rows={4}
-              className="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0EA5E9]"
+              className="w-full px-4 py-3 border border-gray-200 rounded-md focus:outline-none focus:ring-2 focus:ring-[#14b8a6]"
             ></textarea>
           </div>
           

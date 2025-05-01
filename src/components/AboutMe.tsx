@@ -11,7 +11,7 @@ const AboutMe = () => {
     >
       <div className="space-y-6 max-w-3xl">
         <p className="text-lg">
-          Building software that stands the test of time and scales effortlessly? That's my sweet spot. I learned the value of <span className="text-[#FFB800] font-medium">maintainable software</span>, and that lesson still shapes how I approach every project. While I'm comfortable across the full stack, my passion lies in the backend, where <span className="text-[#0EA5E9] font-medium">Python</span> and <span className="text-[#0EA5E9] font-medium">Rust</span> are my go-to tools for crafting robust solutions. I'm always eager to dive into new technologies that solve complex problems with elegance.
+          Building software that stands the test of time and scales effortlessly? That's my sweet spot. I learned the value of <span className="text-[#FFB800] font-medium">maintainable software</span>, and that lesson still shapes how I approach every project. While I'm comfortable across the full stack, my passion lies in the backend, where <span className="text-[#14b8a6] font-medium">Python</span> and <span className="text-[#14b8a6] font-medium">Rust</span> are my go-to tools for crafting robust solutions. I'm always eager to dive into new technologies that solve complex problems with elegance.
         </p>
         <p className="text-lg">
           Beyond the code, I'm energized by the world of entrepreneurship. I'm actively exploring startup ideas and using my technical skills to build innovative solutions in <span className="text-[#FFB800] font-medium">real estate transactions</span>. This dual perspective helps me connect technical execution with strategic vision.

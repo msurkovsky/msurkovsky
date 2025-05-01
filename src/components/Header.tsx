@@ -30,9 +30,9 @@ const Header = () => {
             visible && "animate-fade-in"
           )}>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-none tracking-tight text-foreground">
-              Engineer<span className="text-[#0EA5E9]">.</span> <br />
-              Builder<span className="text-[#0EA5E9]">.</span> <br />
-              Founder<span className="text-[#0EA5E9]">.</span>
+              Engineer<span className="text-[#14b8a6]">.</span> <br />
+              Builder<span className="text-[#14b8a6]">.</span> <br />
+              Founder<span className="text-[#14b8a6]">.</span>
             </h1>
             <p className="text-lg md:text-xl text-foreground/80 max-w-lg my-6">
               On a mission to simplify the complex.
@@ -61,7 +61,7 @@ const Header = () => {
       </div>
       
       <div className="absolute bottom-0 right-0 w-1/3 h-1/3 pointer-events-none">
-        <svg viewBox="0 0 200 200" className="w-full h-full fill-none stroke-[#0EA5E9] stroke-2 opacity-60">
+        <svg viewBox="0 0 200 200" className="w-full h-full fill-none stroke-[#14b8a6] stroke-2 opacity-60">
           <path d="M10,100 Q50,50 100,100 T190,100" />
         </svg>
       </div>
