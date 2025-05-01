@@ -101,87 +101,28 @@
 @layer utilities {
   /* Simplified utilities */
   .section {
-    @apply py-16 md:py-24 px-6 md:px-12 lg:px-24 max-w-screen-2xl mx-auto;
-  }
-  
-  .text-balance {
-    text-wrap: balance;
+    @apply py-12 md:py-16 px-4 md:px-8 max-w-screen-2xl mx-auto;
   }
   
   .section-divider {
-    @apply w-12 h-px bg-border my-4;
+    @apply w-12 h-px bg-primary my-4;
   }
   
   /* Animation delays */
-  .animate-delay-200 {
-    animation-delay: 200ms;
-  }
+  .animate-delay-200 { animation-delay: 200ms; }
+  .animate-delay-400 { animation-delay: 400ms; }
   
-  .animate-delay-400 {
-    animation-delay: 400ms;
-  }
-  
-  .animate-delay-600 {
-    animation-delay: 600ms;
-  }
-  
-  .animate-delay-800 {
-    animation-delay: 800ms;
-  }
-  
-  /* Simplified transition delays */
-  .transition-delay-75 {
-    transition-delay: 75ms;
-  }
-  
-  .transition-delay-150 {
-    transition-delay: 150ms;
-  }
-  
-  .transition-delay-225 {
-    transition-delay: 225ms;
-  }
-  
-  .transition-delay-300 {
-    transition-delay: 300ms;
-  }
-  
-  /* Simplified shadows */
-  .subtle-shadow {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  }
-  
-  .depth-shadow {
-    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Simplified backgrounds */
+  /* Simplified UI components */
   .bg-charcoal {
     @apply bg-[#1A1A1A];
   }
   
-  /* Consistent content cards */
-  .content-card {
-    @apply bg-card rounded-lg border border-border/40 p-6 depth-shadow;
-  }
-  
-  /* Dark cards */
-  .dark-card {
-    @apply bg-charcoal rounded-lg border border-white/5 text-white p-6 depth-shadow;
-  }
-  
-  /* Yellow on dark backgrounds */
-  .yellow-highlight {
-    @apply text-primary font-medium;
-  }
-  
-  /* Teal tags */
+  /* Tags */
   .teal-tag {
-    @apply bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm;
+    @apply bg-secondary/10 text-secondary px-3 py-1 rounded-full text-sm inline-block;
   }
   
-  /* Yellow tags (on dark bg) */
   .yellow-tag {
-    @apply bg-primary/10 text-primary px-3 py-1 rounded-full text-sm;
+    @apply bg-primary/10 text-primary px-3 py-1 rounded-full text-sm inline-block;
   }
 }
