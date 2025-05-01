@@ -54,12 +54,12 @@ const Contact = () => {
   ];
   
   return (
-    <Section id="contact" title="Contact" className="bg-accent/30 pb-32">
+    <Section id="contact" title="Contact" className="bg-[#1A1A1A] text-white pb-32">
       <div className={cn(
         "max-w-2xl mx-auto opacity-0",
         visible && "animate-fade-in"
       )}>
-        <p className="text-center text-foreground/80 mb-12">
+        <p className="text-center text-white/80 mb-12">
           Interested in discussing a project or just want to connect? Feel free to reach out through any of these channels.
         </p>
         
@@ -68,30 +68,31 @@ const Contact = () => {
             <div
               key={index}
               className={cn(
-                "flex items-center gap-4 p-6 bg-background rounded-lg subtle-shadow transition-all opacity-0",
-                !item.disabled && "hover:shadow-md hover:-translate-y-1",
+                "flex items-center gap-4 p-6 rounded-lg depth-shadow transition-all opacity-0 relative",
+                !item.disabled && "hover:-translate-y-1 hover:shadow-lg",
                 item.disabled && "cursor-not-allowed opacity-70",
                 visible && "animate-fade-in",
-                `animate-delay-${index * 200}`
+                `animate-delay-${index * 200}`,
+                item.disabled ? "bg-card/5 border border-white/5" : "bg-gradient-to-br from-card/10 to-card/5 border border-white/10"
               )}
               style={{ wordBreak: 'break-word' }}
             >
               <div className={cn(
                 "shrink-0 p-2 rounded-full",
-                item.disabled ? "bg-gray-200 dark:bg-gray-700" : "bg-accent/50"
+                item.disabled ? "bg-gray-700" : item.icon === Mail ? "bg-primary/20" : item.icon === Github ? "bg-secondary/20" : "bg-accent/20"
               )}>
-                <item.icon size={20} className={item.disabled ? "text-gray-400 dark:text-gray-500" : "text-primary"} />
+                <item.icon size={20} className={item.disabled ? "text-gray-500" : item.icon === Mail ? "text-primary" : item.icon === Github ? "text-secondary" : "text-accent-foreground"} />
               </div>
               <div className="min-w-0">
-                <p className="text-sm text-foreground/60">{item.label}</p>
+                <p className="text-sm text-white/60">{item.label}</p>
                 <p className={cn(
-                  "text-foreground",
-                  item.disabled && "text-gray-400 dark:text-gray-500"
+                  "text-white",
+                  item.disabled && "text-gray-500"
                 )}>
                   {item.value}
                 </p>
                 {item.disabled && item.disabledReason && (
-                  <p className="text-xs text-gray-400 dark:text-gray-500 mt-1 italic">
+                  <p className="text-xs text-gray-500 mt-1 italic">
                     {item.disabledReason}
                   </p>
                 )}
@@ -114,7 +115,7 @@ const Contact = () => {
       </div>
       
       <footer className={cn(
-        "mt-24 text-center text-sm text-foreground/60 opacity-0",
+        "mt-24 text-center text-sm text-white/60 opacity-0",
         visible && "animate-fade-in animate-delay-800"
       )}>
         <p>© {new Date().getFullYear()} Martin Šurkovský. All rights reserved.</p>

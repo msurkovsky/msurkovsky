@@ -48,11 +48,13 @@ const Navigation = () => {
     <nav 
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 md:px-12 lg:px-24",
-        scrolled ? "py-3 bg-background/90 backdrop-blur-md subtle-shadow" : "py-6"
+        scrolled ? "py-3 bg-background/90 backdrop-blur-md depth-shadow border-b border-border/30" : "py-6"
       )}
     >
       <div className="flex items-center justify-between max-w-screen-2xl mx-auto">
-        <a href="#" className="text-lg font-display tracking-tight">Martin Šurkovsky</a>
+        <a href="#" className="text-lg font-display tracking-tight">
+          <span className="text-primary">Martin</span> Šurkovsky
+        </a>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-10">
@@ -60,7 +62,7 @@ const Navigation = () => {
             <button 
               key={item} 
               onClick={() => scrollTo(item)}
-              className="text-foreground/80 hover:text-foreground transition-colors capitalize"
+              className="text-foreground/80 hover:text-primary transition-colors capitalize"
             >
               {item}
             </button>
@@ -79,7 +81,7 @@ const Navigation = () => {
       
       {/* Redesigned Mobile Navigation Menu */}
       <div className={cn(
-        "md:hidden fixed inset-x-0 top-0 h-auto max-h-screen bg-card shadow-lg z-40 transition-all duration-300 ease-in-out",
+        "md:hidden fixed inset-x-0 top-0 h-auto max-h-screen bg-card/95 backdrop-blur-lg shadow-lg z-40 transition-all duration-300 ease-in-out border-b border-border/30",
         isOpen 
           ? "translate-y-0 opacity-100" 
           : "-translate-y-full opacity-0 pointer-events-none"
@@ -91,7 +93,7 @@ const Navigation = () => {
                 key={item} 
                 onClick={() => scrollTo(item)}
                 className={cn(
-                  "w-full py-3 px-6 rounded-md text-center text-foreground/80 hover:text-foreground hover:bg-accent transition-all capitalize text-xl",
+                  "w-full py-3 px-6 rounded-md text-center text-foreground/80 hover:text-primary hover:bg-accent transition-all capitalize text-xl",
                   "transform transition-all duration-300",
                   isOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
                   // Staggered animation delay for each menu item

@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import Section from './Section';
 import { cn } from '@/lib/utils';
@@ -72,21 +73,21 @@ const Projects = () => {
   ];
   
   return (
-    <Section id="projects" title="Selected Projects" fullWidth>
+    <Section id="projects" title="Selected Projects" fullWidth className="bg-gradient-to-b from-background to-accent/10">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {projects.map((project, index) => (
           <div 
             key={index} 
             className={cn(
-              "group bg-background rounded-lg overflow-hidden subtle-shadow transition-all hover:shadow-lg opacity-0",
+              "group bg-background rounded-lg overflow-hidden depth-shadow transition-all hover:-translate-y-1 hover:shadow-lg border border-border/40 opacity-0",
               visible && "animate-fade-in",
               `animate-delay-${index * 200}`
             )}
           >
             <div className={cn(
-              "h-48 w-full bg-gradient-to-br from-accent to-secondary flex items-center justify-center p-6"
+              "h-48 w-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center p-6"
             )}>
-              <h3 className="text-3xl font-medium text-center text-accent-foreground">{project.shortName}</h3>
+              <h3 className="text-3xl font-medium text-center text-foreground">{project.shortName}</h3>
             </div>
             <div className="p-6 space-y-4">
               <div className="flex justify-between items-start">
@@ -107,7 +108,10 @@ const Projects = () => {
                 {project.tags.map((tag, idx) => (
                   <span 
                     key={idx} 
-                    className="px-2 py-1 bg-accent/50 text-accent-foreground rounded-md text-xs"
+                    className={cn(
+                      "px-2 py-1 rounded-md text-xs",
+                      idx % 2 === 0 ? "bg-primary/10 text-primary" : "bg-secondary/20 text-secondary-foreground"
+                    )}
                   >
                     {tag}
                   </span>

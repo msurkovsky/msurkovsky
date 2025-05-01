@@ -8,11 +8,11 @@ const AboutMe = () => {
     <Section 
       id="about" 
       title="About Me" 
-      className="bg-secondary/10"
+      className="bg-[#1A1A1A] text-white"
     >
-      <div className="space-y-6 text-foreground/90">
+      <div className="space-y-6 text-white/90 max-w-4xl mx-auto px-6 py-8 rounded-lg depth-shadow bg-[#1A1A1A]/95">
         <p>
-          Building software that stands the test of time and scales effortlessly? That's my sweet spot. I learned the value of maintainable code early on, and that lesson still shapes how I approach every project. While I'm comfortable across the full stack, my passion lies in the backend, where Rust and Python are my go-to tools for crafting robust solutions. I'm always eager to dive into new technologies that solve complex problems with elegance.
+          Building software that stands the test of time and scales effortlessly? That's my sweet spot. I learned the value of maintainable code early on, and that lesson still shapes how I approach every project. While I'm comfortable across the full stack, my passion lies in the backend, where <span className="text-primary font-medium">Rust</span> and <span className="text-secondary font-medium">Python</span> are my go-to tools for crafting robust solutions. I'm always eager to dive into new technologies that solve complex problems with elegance.
         </p>
         <p>
           Beyond the code, I'm energized by the world of entrepreneurship. I'm actively exploring startup ideas and using my technical skills to build innovative solutions. This dual perspective helps me connect technical execution with strategic vision.
