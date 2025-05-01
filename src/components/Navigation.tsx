@@ -18,7 +18,6 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   
-  // Effect to prevent body scrolling when menu is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -34,7 +33,6 @@ const Navigation = () => {
     setIsOpen(false);
     const element = document.getElementById(id);
     if (element) {
-      // Add a slight delay to allow menu to close before scrolling
       setTimeout(() => {
         element.scrollIntoView({ 
           behavior: 'smooth',
@@ -48,15 +46,15 @@ const Navigation = () => {
     <nav 
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 md:px-12 lg:px-24",
-        scrolled ? "py-3 bg-background/90 backdrop-blur-md subtle-shadow" : "py-6"
+        scrolled ? "py-3 bg-background/95 backdrop-blur-sm" : "py-6"
       )}
     >
       <div className="flex items-center justify-between max-w-screen-2xl mx-auto">
-        <a href="#" className="text-lg font-display tracking-tight">Martin Šurkovsky</a>
+        <a href="#" className="text-2xl font-display uppercase tracking-wide font-bold">Surkovsky</a>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-10">
-          {['journey', 'expertise', 'projects', 'contact'].map((item) => (
+          {['about', 'projects', 'contact'].map((item) => (
             <button 
               key={item} 
               onClick={() => scrollTo(item)}
@@ -77,7 +75,7 @@ const Navigation = () => {
         </button>
       </div>
       
-      {/* Redesigned Mobile Navigation Menu */}
+      {/* Mobile Navigation Menu */}
       <div className={cn(
         "md:hidden fixed inset-x-0 top-0 h-auto max-h-screen bg-card shadow-lg z-40 transition-all duration-300 ease-in-out",
         isOpen 
@@ -86,7 +84,7 @@ const Navigation = () => {
       )}>
         <div className="pt-24 pb-8 px-6">
           <div className="flex flex-col items-center gap-6 p-4">
-            {['journey', 'expertise', 'projects', 'contact'].map((item, index) => (
+            {['about', 'projects', 'contact'].map((item, index) => (
               <button 
                 key={item} 
                 onClick={() => scrollTo(item)}
@@ -94,7 +92,6 @@ const Navigation = () => {
                   "w-full py-3 px-6 rounded-md text-center text-foreground/80 hover:text-foreground hover:bg-accent transition-all capitalize text-xl",
                   "transform transition-all duration-300",
                   isOpen ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
-                  // Staggered animation delay for each menu item
                   isOpen && `transition-delay-${index * 75}ms`
                 )}
                 style={{
