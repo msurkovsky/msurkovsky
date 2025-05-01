@@ -79,17 +79,18 @@ const Projects = () => {
           <div 
             key={index} 
             className={cn(
-              "group bg-background rounded-lg overflow-hidden depth-shadow transition-all hover:-translate-y-1 hover:shadow-lg border border-border/40 opacity-0",
+              "group rounded-lg overflow-hidden depth-shadow transition-all hover:-translate-y-1 hover:shadow-lg border border-border/40 opacity-0",
               visible && "animate-fade-in",
               `animate-delay-${index * 200}`
             )}
           >
             <div className={cn(
-              "h-48 w-full bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center p-6"
+              "h-48 w-full bg-[#1A1A1A] flex items-center justify-center p-6 relative overflow-hidden"
             )}>
-              <h3 className="text-3xl font-medium text-center text-foreground">{project.shortName}</h3>
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <h3 className="text-3xl font-medium text-center text-white group-hover:text-secondary transition-colors duration-300">{project.shortName}</h3>
             </div>
-            <div className="p-6 space-y-4">
+            <div className="p-6 space-y-4 bg-background">
               <div className="flex justify-between items-start">
                 <h4 className="text-xl font-medium">{project.title}</h4>
                 {project.link ? (
@@ -97,7 +98,7 @@ const Projects = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group-hover:text-primary transition-colors"
+                    className="text-foreground/70 hover:text-primary transition-colors"
                   >
                     <ExternalLink size={16} />
                   </a>
