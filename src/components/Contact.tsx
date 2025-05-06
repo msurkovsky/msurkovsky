@@ -46,10 +46,9 @@ const Contact = () => {
     {
       icon: Globe,
       label: "Personal Blog",
-      value: "blog.surkovsky.cz",
-      link: "https://blog.surkovsky.cz",
-      disabled: true, // Set to disabled
-      disabledReason: "Coming soon! First post in progress."
+      value: "msurkovsky.github.io",
+      link: "https://msurkovsky.github.io",
+      disabled: false
     }
   ];
   
