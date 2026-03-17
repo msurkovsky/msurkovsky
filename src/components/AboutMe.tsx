@@ -9,27 +9,19 @@ const AboutMe = () => {
       title="About Me" 
       className="bg-charcoal text-white"
     >
-      <div className="max-w-3xl mx-auto bg-black/20 p-6 rounded-lg border border-white/10">
-        <p className="mb-4 text-lg">
-          Building software that stands the test of time and scales effortlessly is my passion. I specialize in backend development with <span className="text-primary">Rust</span> and <span className="text-primary">Python</span>.
+      <div className="max-w-3xl mx-auto bg-black/20 p-6 rounded-lg border border-white/10 space-y-4">
+        <p>
+          I've been building software since 2006. My first paid projects were web applications for the firefighters of the Moravian region, one of which is still running today, wrapped in Docker because nobody can replace it. That early start shaped a principle I still follow: build things that last.
         </p>
-        
-        <div className="my-6 border-l-4 border-primary pl-4 py-2">
-          <p className="mb-4">
-            Beyond coding, I'm exploring entrepreneurship and building innovative solutions.
-          </p>
-        </div>
-        
-        <ul className="space-y-2 mb-4">
-          <li className="flex items-center gap-2">
-            <span className="text-primary">•</span>
-            <p>Collaborative team player with strong problem-solving skills</p>
-          </li>
-          <li className="flex items-center gap-2">
-            <span className="text-primary">•</span>
-            <p>Family-oriented, with values that shape my work perspective</p>
-          </li>
-        </ul>
+        <p>
+          I'm a systems thinker by nature. I've never been the person who obsesses over a single detail in isolation. I care about how the pieces fit together, how a system evolves, and what breaks when it scales. That mindset took me through academic research in high-performance computing, distributed systems at industrial scale, and eventually into founding my own projects.
+        </p>
+        <p>
+          More than two years ago, I started treating entrepreneurship as another framework worth learning, and learning the hard way. Going through a startup accelerator, validating ideas, and building Doqra from scratch opened my eyes in ways that pure engineering never could. It shifted how I think about why software exists, not just how it works. I'm convinced it made me a better engineer.
+        </p>
+        <p>
+          I work primarily with Rust and Python. Outside of all that, I'm a husband and a father, which keeps everything in perspective.
+        </p>
       </div>
     </Section>
   );

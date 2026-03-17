@@ -32,7 +32,7 @@ const Header = () => {
             Engineer by background,<br/> founder by <span className="text-primary">passion</span>
           </h1>
           <p className="text-base md:text-xl text-foreground/80 max-w-lg">
-            With over 20 years of experience spanning academic research, corporate software engineering, and entrepreneurial ventures.
+            Two decades of building software — from research and high-performance computing to industrial platforms and startups.
           </p>
           <div className="pt-4">
             <div className="flex flex-col p-6 bg-[#1A1A1A] text-white rounded-lg depth-shadow">
