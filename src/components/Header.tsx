@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { cn } from '@/lib/utils';
-import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 
 const Header = () => {
   const [visible, setVisible] = useState(false);
@@ -38,14 +37,13 @@ const Header = () => {
           "md:col-span-2 opacity-0",
           visible && "animate-fade-in animate-delay-400"
         )}>
-          <div className="relative max-w-xs mx-auto md:ml-auto md:mr-0">
-            <div className="rotate-2 rounded-2xl overflow-hidden subtle-shadow">
-              <Avatar className="w-full h-full aspect-[3/4]">
-                <AvatarImage src={profileImagePath} alt="Martin Šurkovský" className="object-cover" />
-                <AvatarFallback className="w-full h-full bg-muted flex items-center justify-center text-foreground/20 text-9xl font-display">
-                  MŠ
-                </AvatarFallback>
-              </Avatar>
+          <div className="relative max-w-sm mx-auto md:ml-auto md:mr-0">
+            <div className="rotate-2 rounded-2xl overflow-hidden subtle-shadow aspect-[3/4]">
+              <img
+                src={profileImagePath}
+                alt="Martin Šurkovský"
+                className="w-full h-full object-cover object-[35%_top]"
+              />
             </div>
           </div>
         </div>
