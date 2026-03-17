@@ -151,7 +151,7 @@ const Journey = () => {
             </span>
           )}
         </div>
-        <div className="bg-background rounded-md p-4 md:p-6 subtle-shadow mb-6">
+        <div className="rounded-md p-4 md:p-6 mb-6 border-l border-foreground/10">
           {item.description && renderParagraphs(item.description)}
           
           {item.bulletPoints && item.bulletPoints.length > 0 && (
@@ -178,7 +178,7 @@ const Journey = () => {
   };
   
   return (
-    <Section id="journey" title="Professional Journey" className="bg-accent/30">
+    <Section id="journey" title="Professional Journey">
       <div className="max-w-5xl mx-auto px-4">
         <div className="space-y-8 mt-6">
           {professionalJourney.map((item, index) => renderJourneyItem(item, index, professionalJourney.length))}

@@ -48,7 +48,7 @@ const Navigation = () => {
     <nav 
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 px-6 md:px-12 lg:px-24",
-        scrolled ? "py-3 bg-background/90 backdrop-blur-md depth-shadow border-b border-border/30" : "py-6"
+        scrolled ? "py-3 bg-background/90 backdrop-blur-md subtle-shadow" : "py-6"
       )}
     >
       <div className="flex items-center justify-between max-w-screen-2xl mx-auto">
@@ -81,7 +81,7 @@ const Navigation = () => {
       
       {/* Redesigned Mobile Navigation Menu */}
       <div className={cn(
-        "md:hidden fixed inset-x-0 top-0 h-auto max-h-screen bg-card/95 backdrop-blur-lg shadow-lg z-40 transition-all duration-300 ease-in-out border-b border-border/30",
+        "md:hidden fixed inset-x-0 top-0 h-auto max-h-screen bg-background/95 backdrop-blur-lg z-40 transition-all duration-300 ease-in-out",
         isOpen 
           ? "translate-y-0 opacity-100" 
           : "-translate-y-full opacity-0 pointer-events-none"

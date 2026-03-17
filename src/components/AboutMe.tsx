@@ -1,15 +1,9 @@
-
-import React from 'react';
 import Section from './Section';
 
 const AboutMe = () => {
   return (
-    <Section 
-      id="about" 
-      title="About Me" 
-      className="bg-charcoal text-white"
-    >
-      <div className="max-w-3xl mx-auto bg-black/20 p-6 rounded-lg border border-white/10 space-y-4">
+    <Section id="about" title="About Me">
+      <div className="max-w-3xl space-y-6 text-foreground/75 leading-relaxed">
         <p>
           I've been building software since 2006. My first paid projects were web applications for the firefighters of the Moravian region, one of which is still running today, wrapped in Docker because nobody can replace it. That early start shaped a principle I still follow: build things that last.
         </p>
