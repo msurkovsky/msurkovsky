@@ -88,13 +88,14 @@ showcase personal projects and a fuller picture of who Martin is.
 - Shadow Services in Projects: clearer purpose (plant floor → cloud) and role description
 
 ### 10. Structural fixes
-- Added **Education section** after Journey (PhD with thesis/Morpheus, Master's with Despr, Bachelor's)
+- Added **Education section** after Journey (PhD, Master's, Bachelor's)
+- PhD description expanded: MP-nets as the core contribution (abstract model for MPI visualization, code-to-model correlation, deadlock/blocking detection), Morpheus as proof-of-concept
 - Navigation: added "about" link
 - Navigation: removed unused `isMobile` import
 
 ## Git State
 
 - Branch: `main`
-- Latest commit: `fce1f00` (Education section, Navigation fixes)
-- 15 commits ahead of origin
+- Latest commit: `236225d` (PhD description expanded)
+- 17 commits ahead of origin
 - **Content revision complete** — all items done, polish and structural fixes applied
