@@ -36,7 +36,8 @@ const Education = () => {
     {
       period: "Oct 2006 – Jun 2009",
       degree: "Bachelor's in Computer Science",
-      institution: "VŠB – Technical University of Ostrava"
+      institution: "VŠB – Technical University of Ostrava",
+      description: "Developed a rotation-invariant coin recognition algorithm. Results published at ISVC (International Symposium on Visual Computing)."
     }
   ];
 
