@@ -73,11 +73,11 @@ showcase personal projects and a fuller picture of who Martin is.
 - **Website ≠ CV**: Website is more open/personal; CV is focused pitch for specific roles
 - **Founder identity is a feature, not a bug**: Companies that reject entrepreneurial mindset aren't where Martin would thrive anyway
 
-## Remaining (in order)
+### 7. Contact section — updated
+- Blog link fixed: now points to `msurkovsky.github.io` (live with 2 posts)
+- CV download link skipped (not publishing PDF)
 
-### 7. Contact section
-- Add downloadable CV link
-- Check if blog link (blog.surkovsky.cz) is live or dead — currently shows "coming soon"
+## Remaining (in order)
 
 ### 8. New section: Talks & Publications
 - Martin presented at ISC and SC (major HPC conferences) — currently buried in CV, absent
@@ -88,5 +88,5 @@ showcase personal projects and a fuller picture of who Martin is.
 ## Git State
 
 - Branch: `main`
-- Latest commit: `592a772` (Doqra and Školkáček enhanced)
-- 8 commits ahead of origin
+- Latest commit: `8875f93` (blog link fixed)
+- 10 commits ahead of origin
