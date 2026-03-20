@@ -38,37 +38,59 @@ const Journey = () => {
   
   const professionalJourney: JourneyItem[] = [
     {
-      period: "2023 - Present",
-      title: "Senior Software Engineer",
-      at: "Rockwell Automation",
-      description: "Initially contributed to the CIP Stack development using Rust. Following a team reorganization, I now work as part of a team building the Shadow Service - a suite of microservices that mirror selected industrial edge device functionality to the cloud. This architecture enables data flow from controllers and other industrial hardware to cloud environments at configurable service levels, providing a unified access point for client applications. This approach alleviates bandwidth constraints on industrial networks.",
+      period: "Oct 2025 – Present",
+      title: "Software Developer",
+      at: "Paessler GmbH, Nürnberg, Germany",
+      description: "Working on PRTG Core, contributing to system stability and development flow.",
+      bulletPoints: [
+        "Designed and implemented a backend-agnostic database schema comparison component",
+        "Contributing to cross-component tasks and issue resolution across the codebase"
+      ],
       icon: Briefcase
     },
     {
-      period: "2018 - 2023",
-      title: "Researcher",
-      at: "VSB - Technical University of Ostrava, IT4Innovations - National Supercomputing Center",
-      description: "Contributed to multiple national and international research projects, specializing in translating complex scientific requirements into scalable software solutions across diverse domains.",
+      period: "Jun 2023 – Sep 2025",
+      title: "Senior Software Engineer",
+      at: "Rockwell Automation, Prague",
+      description: "Started with CIP stack implementation in Rust, then moved to Shadow Service — a suite of microservices mirroring industrial edge devices to the cloud.",
       bulletPoints: [
-        "Enhanced a traffic simulator's scalability for high-performance computing environments",
-        "Modernized the viaRodos project, successfully migrating it from legacy systems to current technologies after the original maintainer's departure",
-        "Led development of a deterministic traffic simulator, initially as the primary developer and later as technical lead for an expanded team",
-        "Initiated modernization work on Caver, a protein analysis tool, quickly acquiring domain knowledge in computational biology to contribute to early design phases"
+        "Implemented parts of the CIP stack in Rust, including OPC UA support for the CIP adapter",
+        "Contributed to Shadow Service, an abstraction layer over Eclipse Ditto for industrial automation",
+        "Helped deliver a stakeholder-facing end-to-end demo spanning edge runtime, cloud infrastructure, and UI",
+        "Later contributed across component boundaries: API design, service boundaries, system state ownership",
+        "Supported other engineers through pair programming, feasibility spikes, and technical guidance"
       ],
-      bulletTitle: "Key Achievements:",
+      icon: Briefcase
+    },
+    {
+      period: "Jun 2018 – Mar 2023",
+      title: "Researcher",
+      at: "IT4Innovations – National Supercomputing Center, Ostrava",
+      description: "Contributed to national and international research projects, translating complex scientific requirements into scalable software.",
+      bulletPoints: [
+        "Led development of Ruth, a traffic simulator with OpenStreetMap integration; supervised three students; presented at ISC and SC conferences",
+        "Took over viaRODOS, a public traffic-monitoring system — updated legacy code, reconnected to new data services, introduced caching for reliable operation",
+        "Owned the redesign of Caver for HPC, learning computational biology domain to define a scalable technical direction"
+      ],
       icon: Book
     },
     {
-      period: "2012 - 2018",
+      period: "Oct 2017 – May 2018",
+      title: "Research Assistant",
+      at: "IT4Innovations – National Supercomputing Center, Ostrava",
+      description: "Optimized communication in a distributed Betweenness Centrality algorithm, applying ideas from my PhD research. The refined version was later used in the H2020 Antarex project.",
+      icon: Book
+    },
+    {
+      period: "Nov 2012 – May 2018",
       title: "Researcher",
-      at: "VSB - Technical University of Ostrava, Department of Computer Science",
-      description: "Conducted research while pursuing my PhD, contributing to multiple software projects across various computing domains.",
+      at: "VŠB – Technical University of Ostrava, Department of Computer Science",
+      description: "Conducted research while pursuing my PhD, contributing to multiple software projects.",
       bulletPoints: [
-        "Contributed to the development of a visual programming tool designed to simplify access to high-performance computing resources",
-        "Assisted in creating a framework for generating discrete structures from basic building blocks such as Cartesian products and mappings, with capabilities to enumerate all elements, all non-isomorphic structures, or generate random elements",
-        "Participated in a complete rewrite of a hierarchical table visualization system using JavaScript canvas technology. Advanced to a lead position in my final years, overseeing development work and guiding junior co-workers"
+        "Developed front-end components for Roslab, a human resource planning tool; took on lead developer role within a small team",
+        "Owned the performance-analysis component in Kaira, a visual programming tool for HPC",
+        "Contributed to Haydi, a framework for generating discrete structures, through design discussions and technical input"
       ],
-      bulletTitle: "Key Achievements:",
       icon: Book
     }
   ];
