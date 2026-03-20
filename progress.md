@@ -82,9 +82,14 @@ showcase personal projects and a fuller picture of who Martin is.
 - Reasoning: too academic for target audience (hiring managers, startup folks)
 - ORCID link (`0000-0001-7474-123X`) can be added later if a dedicated section is created
 
+### 9. Content polish
+- Doqra in Journey: aligned with Projects (origin story about wife's practice)
+- Expertise: added "AI-assisted Development" to Specializations
+- Shadow Services in Projects: clearer purpose (plant floor → cloud) and role description
+
 ## Git State
 
 - Branch: `main`
-- Latest commit: `251aedd` (Contact section completed)
-- 11 commits ahead of origin
-- **Content revision complete** — all planned items done or intentionally skipped
+- Latest commit: `5a5af39` (content polish)
+- 13 commits ahead of origin
+- **Content revision complete** — all planned items done, polish applied
