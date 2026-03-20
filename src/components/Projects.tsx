@@ -42,6 +42,13 @@ const Projects = () => {
       tags: ["Web application", "Real estate", "React", "Node.js"],
     },
     {
+      shortName: "Školkáček",
+      title: "Child Development Tracking for Preschools",
+      description: "A volunteer project helping preschools monitor children's development over time. Born from helping a local preschool escape Excel chaos — built in under 20 hours using AI-assisted development. Free for preschools, so teachers can spend more time with children and less on bureaucracy.",
+      tags: ["Volunteer", "AI-assisted development", "Education"],
+      link: "https://skolkacekproskolky.cz"
+    },
+    {
       shortName: "Nomlify",
       title: "Your Personal Cookbook for Toddlers",
       description: "A passion project created to participate in a startup accelerator program. Nomlify was envisioned as a mobile application to help parents manage their toddlers' meals by gathering recipes, customizing them, and discovering new meal ideas.",
@@ -51,8 +58,8 @@ const Projects = () => {
     {
       shortName: "Ruth",
       title: "Distributed Traffic Simulator",
-      description: "As the lead developer and later team lead, I worked on Ruth, a distributed traffic simulator designed for high-performance computing clusters. The project leveraged Python and Rust, utilized OpenStreetMap data for realistic simulations, and provided advanced visualizations to analyze traffic patterns.",
-      tags: ["HPC", "Python", "Rust", "Distributed computing"],
+      description: "As the lead developer and later team lead, I worked on Ruth, a distributed traffic simulator designed for high-performance computing clusters. The project leveraged Python and Rust (connected via PyO3), utilized OpenStreetMap data for realistic simulations, and provided advanced visualizations to analyze traffic patterns.",
+      tags: ["HPC", "Python", "Rust", "PyO3", "Distributed computing"],
       link: "https://github.com/IT4Innovations/ruth"
     },
     {
@@ -66,14 +73,14 @@ const Projects = () => {
       shortName: "Morpheus",
       title: "Visual analysis of message-passing applications",
       description: "Developed as a proof-of-concept tool during my PhD research. Morpheus visualizes the communication patterns of message-passing applications, offering insights into their behavior and performance characteristics.",
-      tags: ["C++", "LLVM", "Python", "Performance Analysis"],
+      tags: ["C++", "LLVM", "Python", "Docker", "Performance Analysis"],
       link: "https://github.com/IT4Innovations/morpheus"
     },
   ];
 
   return (
     <Section id="projects" title="Selected Projects" fullWidth>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 justify-items-center lg:justify-items-start [&>*:last-child]:lg:col-start-2">
         {projects.map((project, index) => (
           <div
             key={index}
