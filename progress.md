@@ -77,16 +77,14 @@ showcase personal projects and a fuller picture of who Martin is.
 - Blog link fixed: now points to `msurkovsky.github.io` (live with 2 posts)
 - CV download link skipped (not publishing PDF)
 
-## Remaining (in order)
-
-### 8. New section: Talks & Publications
-- Martin presented at ISC and SC (major HPC conferences) — currently buried in CV, absent
-  from website
-- 15 publications on ORCID (2009–2020) covering: MPI visualization, traffic simulation,
-  combinatorial objects, Petri nets, ant colony optimization, image processing
+### 8. Talks & Publications — skipped for now
+- ISC/SC presentations and ORCID (15 publications) not added
+- Reasoning: too academic for target audience (hiring managers, startup folks)
+- ORCID link (`0000-0001-7474-123X`) can be added later if a dedicated section is created
 
 ## Git State
 
 - Branch: `main`
-- Latest commit: `8875f93` (blog link fixed)
-- 10 commits ahead of origin
+- Latest commit: `251aedd` (Contact section completed)
+- 11 commits ahead of origin
+- **Content revision complete** — all planned items done or intentionally skipped
