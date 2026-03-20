@@ -25,7 +25,7 @@ const Education = () => {
       period: "Oct 2012 – Jan 2020",
       degree: "Ph.D. in Computer Science",
       institution: "VŠB – Technical University of Ostrava",
-      description: "Thesis: Extraction of abstract models of communications from message-passing applications. Developed Morpheus, a visualization tool for MPI communication patterns using Petri net-based MP-nets."
+      description: "Thesis: Extraction of abstract models of communications from message-passing applications. Introduced MP-nets — an abstract model for visualizing MPI communication patterns, balancing expressiveness with clarity. Unlike low-level Petri nets, MP-nets attach code snippets and function names directly to the model, letting developers spot deadlocks, blocking communication, and unintentional waiting at a glance. Designed with debugging and performance analysis in mind. Morpheus served as a proof-of-concept, demonstrating automatic extraction of MP-nets from real code."
     },
     {
       period: "Oct 2009 – Jun 2012",
