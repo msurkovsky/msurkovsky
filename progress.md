@@ -87,9 +87,14 @@ showcase personal projects and a fuller picture of who Martin is.
 - Expertise: added "AI-assisted Development" to Specializations
 - Shadow Services in Projects: clearer purpose (plant floor → cloud) and role description
 
+### 10. Structural fixes
+- Added **Education section** after Journey (PhD with thesis/Morpheus, Master's with Despr, Bachelor's)
+- Navigation: added "about" link
+- Navigation: removed unused `isMobile` import
+
 ## Git State
 
 - Branch: `main`
-- Latest commit: `5a5af39` (content polish)
-- 13 commits ahead of origin
-- **Content revision complete** — all planned items done, polish applied
+- Latest commit: `fce1f00` (Education section, Navigation fixes)
+- 15 commits ahead of origin
+- **Content revision complete** — all items done, polish and structural fixes applied
