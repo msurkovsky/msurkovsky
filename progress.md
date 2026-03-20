@@ -58,6 +58,13 @@ showcase personal projects and a fuller picture of who Martin is.
   - Research Assistant (Oct 2017 – May 2018): Betweenness Centrality optimization (ideas from PhD, later used in H2020 Antarex)
 - Updated **VSB Dept of CS** (Nov 2012 – May 2018): Roslab, Kaira, Haydi by name
 
+### 6. Projects section — updated
+- Added **Školkáček**: volunteer project for preschools, AI-assisted development (~20 hours), free for schools
+- Updated **Ruth** tags: added PyO3, mentioned Python-Rust connection in description
+- Updated **Morpheus** tags: added Docker
+- **Caver** intentionally kept out (CV only)
+- Centered last project row in 3-column grid layout
+
 ## Key Decisions
 
 - **Tagline stays**: "Engineer by background, founder by passion" — Martin strongly identifies with it
@@ -65,11 +72,6 @@ showcase personal projects and a fuller picture of who Martin is.
 - **Founder identity is a feature, not a bug**: Companies that reject entrepreneurial mindset aren't where Martin would thrive anyway
 
 ## Remaining (in order)
-
-### 6. Projects section
-- Align descriptions with CV where appropriate
-- Discuss with Martin: any personal/hobby projects to add? (currently all projects are
-  employment- or startup-tied)
 
 ### 7. Contact section
 - Add downloadable CV link
@@ -84,5 +86,5 @@ showcase personal projects and a fuller picture of who Martin is.
 ## Git State
 
 - Branch: `main`
-- Latest commit: `77d29c6` (Journey section aligned with CV)
-- 5 commits ahead of origin
+- Latest commit: `469fecf` (Projects section updated)
+- 6 commits ahead of origin
