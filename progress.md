@@ -50,6 +50,14 @@ showcase personal projects and a fuller picture of who Martin is.
 - `object-[35%_top]` crop to center face properly
 - Size: `max-w-sm` for appropriate visual weight
 
+### 5. Journey section — aligned with CV
+- Added **Paessler** (Oct 2025 – Present, Software Developer, PRTG Core)
+- Updated **Rockwell** to Jun 2023 – Sep 2025 with full arc: CIP stack, Shadow Service, end-to-end demo, cross-component design, mentoring
+- Split **IT4Innovations** into two roles:
+  - Researcher (Jun 2018 – Mar 2023): Ruth with ISC/SC presentations, viaRODOS, Caver
+  - Research Assistant (Oct 2017 – May 2018): Betweenness Centrality optimization (ideas from PhD, later used in H2020 Antarex)
+- Updated **VSB Dept of CS** (Nov 2012 – May 2018): Roslab, Kaira, Haydi by name
+
 ## Key Decisions
 
 - **Tagline stays**: "Engineer by background, founder by passion" — Martin strongly identifies with it
@@ -57,14 +65,6 @@ showcase personal projects and a fuller picture of who Martin is.
 - **Founder identity is a feature, not a bug**: Companies that reject entrepreneurial mindset aren't where Martin would thrive anyway
 
 ## Remaining (in order)
-
-### 5. Journey section
-- **Add Paessler role** (Oct 2025 – Present, Software Developer, PRTG Core)
-- **Update Rockwell** period to 2023–2025, rewrite description to reflect full arc:
-  CIP stack → Shadow Service → end-to-end demo → cross-team design leadership & mentoring
-- **IT4Innovations** (2018–2023): strengthen with CV details — Ruth with OpenStreetMap
-  integration, ISC/SC presentations, viaRODOS ownership, Caver domain learning
-- **VSB Dept of CS** (2012–2018): mention Roslab by name, Kaira, Haydi more specifically
 
 ### 6. Projects section
 - Align descriptions with CV where appropriate
@@ -84,5 +84,5 @@ showcase personal projects and a fuller picture of who Martin is.
 ## Git State
 
 - Branch: `main`
-- Latest commit: `e97bb3b` (hero photo fix)
-- 3 commits ahead of origin
+- Latest commit: `77d29c6` (Journey section aligned with CV)
+- 5 commits ahead of origin
