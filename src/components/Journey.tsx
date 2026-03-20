@@ -41,10 +41,10 @@ const Journey = () => {
       period: "Oct 2025 – Present",
       title: "Software Developer",
       at: "Paessler GmbH, Nürnberg, Germany",
-      description: "Working on PRTG Core, contributing to system stability and development flow.",
+      description: "Started on PRTG Core, now part of the Apollo project — helping modernize the product with heavy use of AI-assisted development.",
       bulletPoints: [
         "Designed and implemented a backend-agnostic database schema comparison component",
-        "Contributing to cross-component tasks and issue resolution across the codebase"
+        "Switched to Apollo project, contributing to product modernization efforts"
       ],
       icon: Briefcase
     },
