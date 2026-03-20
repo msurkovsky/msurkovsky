@@ -38,14 +38,14 @@ const Projects = () => {
     {
       shortName: "Doqra",
       title: "Redefining Property Transactions with Transparency and Efficiency",
-      description: "My latest entrepreneurial venture, aimed at transforming property transactions for the digital age. This web application simplifies the complex process of buying and selling properties by automating key tasks, ensuring deadlines are met, and enhancing transparency.",
-      tags: ["Web application", "Real estate", "React", "Node.js"],
+      description: "Started as a small tool to help my wife track cases and deadlines in her real estate practice — so she could focus on expertise, not administration. Grew from there into a full platform for case lifecycle tracking and invoicing. Built heavily with AI-assisted development. Currently in daily use, preparing to open for early adopters.",
+      tags: ["AI-assisted", "Flutter", "Python", "PostgreSQL", "Railway", "Supabase"],
     },
     {
       shortName: "Školkáček",
       title: "Child Development Tracking for Preschools",
-      description: "A volunteer project helping preschools monitor children's development over time. Born from helping a local preschool escape Excel chaos — built in under 20 hours using AI-assisted development. Free for preschools, so teachers can spend more time with children and less on bureaucracy.",
-      tags: ["Volunteer", "AI-assisted development", "Education"],
+      description: "A volunteer project helping preschools monitor children's development over time. Born from helping a local preschool escape Excel chaos — built in under 20 hours using AI-assisted development. Free for preschools, so teachers can spend more time with children and less on bureaucracy. Deployed on Vercel with Supabase.",
+      tags: ["AI-assisted", "Next.js", "React", "TypeScript", "Supabase", "Vercel", "Volunteer"],
       link: "https://skolkacekproskolky.cz"
     },
     {
