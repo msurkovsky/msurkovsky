@@ -59,7 +59,9 @@ showcase personal projects and a fuller picture of who Martin is.
 - Updated **VSB Dept of CS** (Nov 2012 – May 2018): Roslab, Kaira, Haydi by name
 
 ### 6. Projects section — updated
-- Added **Školkáček**: volunteer project for preschools, AI-assisted development (~20 hours), free for schools
+- Added **Školkáček**: volunteer project for preschools, AI-assisted development (~20 hours), free for schools; tech stack (Next.js, React, TypeScript, Supabase, Vercel)
+- Enhanced **Doqra**: origin story (helping wife with real estate practice), tech stack (Flutter, Python, PostgreSQL), deployment (Railway, Supabase, Netlify)
+- Both Doqra and Školkáček: "AI-assisted" as first tag
 - Updated **Ruth** tags: added PyO3, mentioned Python-Rust connection in description
 - Updated **Morpheus** tags: added Docker
 - **Caver** intentionally kept out (CV only)
@@ -86,5 +88,5 @@ showcase personal projects and a fuller picture of who Martin is.
 ## Git State
 
 - Branch: `main`
-- Latest commit: `469fecf` (Projects section updated)
-- 6 commits ahead of origin
+- Latest commit: `592a772` (Doqra and Školkáček enhanced)
+- 8 commits ahead of origin
