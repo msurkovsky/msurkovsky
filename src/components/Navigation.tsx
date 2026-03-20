@@ -2,12 +2,10 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { useIsMobile } from '@/hooks/use-mobile';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const isMobile = useIsMobile();
   
   useEffect(() => {
     const handleScroll = () => {
@@ -58,7 +56,7 @@ const Navigation = () => {
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-10">
-          {['journey', 'expertise', 'projects', 'contact'].map((item) => (
+          {['about', 'journey', 'expertise', 'projects', 'contact'].map((item) => (
             <button 
               key={item} 
               onClick={() => scrollTo(item)}
@@ -88,7 +86,7 @@ const Navigation = () => {
       )}>
         <div className="pt-24 pb-8 px-6">
           <div className="flex flex-col items-center gap-6 p-4">
-            {['journey', 'expertise', 'projects', 'contact'].map((item, index) => (
+            {['about', 'journey', 'expertise', 'projects', 'contact'].map((item, index) => (
               <button 
                 key={item} 
                 onClick={() => scrollTo(item)}
