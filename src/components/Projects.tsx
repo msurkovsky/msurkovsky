@@ -31,8 +31,8 @@ const Projects = () => {
   const projects: Project[] = [
     {
       shortName: "Shadow Services",
-      title: "Shadowing Industrial Edge Devices to Cloud",
-      description: "As a member of a Rockwell Automation team, I contributed to a project enabling the seamless mirroring of industrial controllers and devices to the cloud. This architecture facilitates data flow from industrial hardware to cloud environments with configurable service levels, offering a unified access point for client applications.",
+      title: "Industrial Plant Floor to Cloud",
+      description: "Part of Rockwell Automation's digital platform — bringing data from plant floor controllers into the cloud for analysis, predictive maintenance, and visualization. I spent most of my time at Rockwell on this project: implementing Rust components, contributing to API design and service boundaries, and helping deliver an end-to-end demo for stakeholders.",
       tags: ["Cloud", "Microservices", "Rust", "gRPC", "Docker", "Kubernetes"]
     },
     {

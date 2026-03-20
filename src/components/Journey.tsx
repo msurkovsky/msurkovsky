@@ -100,14 +100,7 @@ const Journey = () => {
       period: "2025 - Present",
       title: "Founder",
       at: "Doqra",
-      description: "Developing a digital platform to solve key friction points in traditional property transactions by streamlining document flow and enhancing process visibility. This venture combines technical expertise with real estate industry insights, currently in early implementation with initial users.",
-      bulletTitle: "Current Focus & Vision:",
-      bulletPoints: [
-        "Creating efficiency tools to significantly improve legal workflow in property transactions",
-        "Building toward a comprehensive platform connecting all stakeholders in the real estate process",
-        "Designing for transparency, allowing all parties to track transaction status in real time",
-        "Applying software expertise to create a frictionless experience for real estate transactions"
-      ],
+      description: "Started as a small tool to help my wife track cases and deadlines in her real estate practice — so she could focus on expertise, not administration. Grew from there into a full platform for case lifecycle tracking and invoicing. Built heavily with AI-assisted development. Currently in daily use, preparing to open for early adopters.",
       icon: Lightbulb
     },
     {

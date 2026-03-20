@@ -30,7 +30,7 @@ const Expertise = () => {
     },
     {
       category: "Specializations",
-      skills: ["High Performance Computing", "Real-time Systems", "Data Visualization"]
+      skills: ["High Performance Computing", "Real-time Systems", "Data Visualization", "AI-assisted Development"]
     },
     {
       category: "Entrepreneurial",
